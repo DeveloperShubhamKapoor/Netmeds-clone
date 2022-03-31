@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medicine page</title>
+    
+   
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.aa{
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+ }
+.mainsection {
+    max-width: 1030px;
+    min-width: 1030px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    min-height: 360px;
+}
+.tytle {
+    margin-bottom: 30px;
+    color: #151b39;
+}
+.innertitle{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1030px;
+    max-width: 1680px;
+    padding: 10px 16px 0;
+    width: auto;
+    font-size: 14px;
+}
+.innertitle h1{
+    font-family: LatoBold;
+    margin: 0;
+    color: #24aeb1;
+}
+.innertitle span{
+    font-style: italic;
+    display: block;
+    color: #24aeb1;
+}
+.listnav,.inletters{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.listnav .inletters{
+    width: 100%;
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 8px 0;
+    text-align: center;
+    background: #fff;
+    font-family: LatoBold;
+    display: flex;
+    margin: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.inletters{
+    width: 100%;
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 8px 0px;
+}
+.listnav .inletters a{
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 11.5px;
+    border-right: 1px solid #ddd;
+    border-left: none;
+    text-decoration: none;
+    margin: 0 3px 0 0;
+    text-transform: uppercase;
+    color: #151b39;
+    font-weight: 400;
+}
+.az{
+    min-height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: -30px;
+    justify-content: left;
+    
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+}
+.az p{
+    color: #151B39;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+   
+}
+#foot{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    margin-top: 80px;
+}
+.netmeds-desc{
+    display: flex;
+    padding: 40px 35px ;
+    justify-content: space-around;
+}
+.netmeds-font{
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 130px;
+    margin-right: 270px;
+    margin-top: -15px;
+    color: #8593b5;
+    font-weight: 500;
+}
+.about-company{
+    display: flex;
+    gap: 25px;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-family: 'Lato',sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+.about-company li:nth-child(1){
+    font-weight: 600;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.subscribe-class{
+    padding-top: 55px;
+    padding-left: 100px;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    width: 20%;
+    margin-left: 200px;
+}
+.subscribe-class p:nth-child(1){
+    font-weight: 600;
+}
+#email{
+    border: none;
+    border-bottom: 1px solid rgba(11,18,25,.2);
+    font-size: 16px;
+    font-family: 'Lato',sans-serif;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#button{
+    border: none;
+    font-size: 15px;
+    background-color: #84be52;
+    border-radius: 5px;
+}
+.play-store{
+    width: 130px;
+    margin-top: 20px;  
+    margin-right: 10px; 
+}
+.foot-bottom{
+    display: flex;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    justify-content: space-between;
+    color: #85889b;
+    padding: 0px 40px;
+    font-weight: 500;
+}
+.foot-bottom p:nth-child(1){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(2){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(3){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(4){
+    cursor: pointer;
+}
+.home{
+    text-decoration: none;
+    color: #24aeb1;
+    font-size: 13px;
+}
+#non{
+    font-size: 12px;
+}
+#aq{
+    color: #b3b5b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+   </style>
+</head>
+<body>
+    <div class="aa">
+   <main id="mainbox" class="mainsection">
+       <a class="home" href="">Home </a><span id="non"> > </span><a class="home" href="medicine.html">Prescription</a>
+    <div class="tytle"> 
+        <div class="innertitle">
+         <h1>Find Your Prescription Medicines</h1>
+         <span>Shop by Drug Category</span>
+     </div>
+     <div class="listnav">
+         <div class="inletters">
+            <a class="a" href="#">A</a>
+            <a class="b" href="#">B</a>
+            <a class="c" href="#">C</a>
+            <a class="d" href="#">D</a>
+            <a id="aq" class="e" href="#">E</a>
+            <a class="f" href="#">F</a>
+            <a class="g" href="#">G</a>
+            <a class="h" href="#">H</a>
+            <a class="i" href="#">I</a>
+            <a class="j ln-disabled" href="#">J</a>
+            <a class="k" href="#">K</a>
+            <a class="l" href="#">L</a>
+            <a class="m" href="#">M</a>
+            <a class="n" href="#">N</a>
+            <a class="o" href="#">O</a>
+            <a class="p" href="#">P</a>
+            <a id="aq" class="q ln-disabled" href="#">Q</a>
+            <a class="r" href="#">R</a>
+            <a class="s" href="#">S</a>
+            <a class="t" href="#">T</a>
+            <a class="u" href="#">U</a>
+            <a class="v" href="#">V</a>
+            <a class="w" href="#">W</a>
+            <a id="aq" class="x ln-disabled" href="#">X</a>
+            <a id="aq" class="y ln-disabled" href="#">Y</a>
+            <a id="aq" class="z ln-disabled" href="#">Z</a>
+            <a id="aq" class="all ln-last ln-selected" href="#" style="color: #4ab6c1;">All</a>
+        </div>
+
+     </div>
+ </div>
+ <div class="az">
+<div class="names">
+    <h3>A</h3>
+    <p>ADHD (8)</p>
+    <p>Acne (444)</p>
+    <p>Alcohol Addiction (13)</p>
+    <p>Allergies (1204)</p>
+    <p> Alzheimer (143)</p>
+    <p>Amoebiasis (24)</p>
+    <p>Anaemia (554)</p>
+    <p>Anaesthesia - Local (67)</p>
+    <p>Anaesthesia General (1)</p>
+    <p>Anal Fissure (1)</p>
+    <p> Angina (334)</p>
+    <p>Anti-Scar (0) </p>
+    <p>Anxiety (37)</p>
+    <p>Apnea (1)</p>
+    <p>Appetite (56)</p>
+    <p> Arthritis (167)</p>
+    <p>Asthma/COPD (786)</p>
+    <p>Immune Disease (321)</p>
+    <p>Ayurvedic Medicine (65)</p>
+    <h3>B</h3>
+    <p>Bacterial Infections (1667)</p>
+    <p>Bladder And Prostate Disorders (360)</p>
+    <p>Bleeding Disorders (178)</p>
+    <p>Blood Clot (721)</p>
+    <p>Bone Metabolism (111)</p>
+    <p>Burns (5)</p>
+    <h3>C</h3>
+    <p>CNS stimulants (1)</p>
+    <p>Cancer/Oncology (1405)</p>
+    <p>Cholelithiasis/Gall Stones (141)</p>
+    <p>Cleanser (182)</p>
+    <p>Colon Cleanser (3)</p>
+    <p>Constipation (334)</p>
+    <p>Contraception (85)</p>
+    <p>Cough And Cold (1141)</p>
+    <p>Crack (1)</p>
+    <h3>D</h3>
+    <p>Dandruff (84)</p>
+    <p>Denture Adhesive (5)</p>
+    <p>Depression (548)</p>
+    <p>Diabetes (4627)</p>
+    <p>Diagnostic (10)</p>
+    <p>Diarrhoea (316)</p>
+    <p>Dietary Management (1)</p>
+    <p>Digestion (146)</p>
+  
+</div>
+<div class="names">
+    <p>Dry Eye (263)</p>
+    <p>Dry Skin (726)</p>
+    <h3>E</h3>
+    <p>Ear Conditions (66)</p>
+    <p>Electrolytes (3)</p>
+    <p>Epilepsy/Convulsion (1068)</p>
+    <p>Eye Infections (98)</p>
+    <p>Eye conditions (480)</p>
+    <h3>F</h3>
+    <p>Fever (420)</p>
+    <p>Fungal (1344)</p>
+    <p>Fungal Infections (1778)</p>
+    <h3>G</h3>
+    <p>Gastro Intestinal Motility Disorders (78)</p>
+    <p>General-P (103)</p>
+    <p>Glaucoma (203)</p>
+    <p>Gout (136)</p>
+    <h3>H</h3>
+    <p>Haematopoiesis (157)</p>
+    <p>Haemorrhoid (55)</p>
+    <p>Hair Color (8</p>
+    <p>Hair Loss (317)</p>
+    <p>Head Lice (2)</p>
+    <p>Heart Failure (42)</p>
+    <p>Hepatitis B Infection (9)</p>
+    <p>High Cholesterol (1735)</p>
+    <p>Hirsutism (3)</p>
+    <p>Hormonal Therapy (1260)</p>
+    <p>Hyperpigmentation (193)</p>
+    <p>Hypertension (4520)</p>
+    <p>Hyperthyroidism (19)</p>
+    <p>Hypnosis (0)</p>
+    <p>Hyponatremia (21)</p>
+    <p>Hypotension (24)</p>
+    <p>Hypothyroidism (138)</p>
+    <h3>I</h3>
+    <p>Idiopathic Pulmonary Fibrosis (42)
+    </p>
+    <p>Immune Sera (0)</p>
+    <p>Immune Suppression (49)</p>
+    <p>Immunoglobulins (18)</p>
+    <p>Impotence/Erectile Dysfunction (Ed) (140)</p>
+    <p>Infection (4874)</p>
+    <p>Inhaler/Nebulizer (1)</p>
+    <p>Insulin Pen (Device) (0)</p>
+    <p>Intermittent Claudication (19)</p>
+    <p>Iron Supplement/Anaemia (0)</p>
+</div>
+<div class="names">
+    <p>Itching/Dry Skin (3)</p>
+    <h3>K</h3>
+    <P>Kidney Disease/Stones (138)
+    </P>
+    <h3>L</h3>
+    <p>LYMPHOEDEMA (0)</p>
+    <p>Leprosy (2)</p>
+    <p>Liver Diseases (121)</p>
+    <p>Liver Supplement (0)</p>
+    <p>Lubrication (3)</p>
+    <h3>M</h3>
+    <p>Malarial (204)</p>
+    <p>Melasma (4)</p>
+    <p>Migraine (161)</p>
+    <p>Multiple Sclerosis (7)</p>
+    <p>Muscle Cramps/Spasticity (317)
+    </p>
+    <p>Muscle Spasm (349)</p>
+    <p>Myasthenia Gravis (7)</p>
+    <p>Mydriasis (43)</p>
+    <h3>N</h3>
+    <p>Nappy Rash (4)</p>
+    <p>Nasal Congestion (203)</p>
+    <p>Neuropathic Pain (783)
+    </p>
+    <p>Nootropics And Neurotrophics (282)
+    </p>
+    <h3>O</h3>
+    <p>Obese (2)</p>
+    <p>Obesity (2)</p>
+    <p>Oral Care (278)</p>
+    <p>Osteoporosis (85)</p>
+    <h3>P</h3>
+    <p>Pain relief (2445)</p>
+    <p>Parasitic Worms (226)</p>
+    <p>Parkinsonism (154)</p>
+    <p>Patanjali Ayurvedic (2)</p>
+    <p>Pen (Device) (0)</p>
+    <p>Peripheral Hypertension (13)</p>
+    <P>Peripheral Vascular Disease (7)</P>
+    <p>Poisoning/Overdose (52)
+    </p>
+    <p>Polycystic ovary syndrome(PCOS) (0)</p>
+    <p>Pregnancy Testing Kit (9)
+    </p>
+    <p>Premature Ejaculation (1)</p>
+    <p>Psoriasis (5)
+    </p>
+    <p>Psoriasis/Seborrhea/Ichthyosis (133)
+    </p>
+    <p>Psychosis (293)</p>
+    <p>Pulmonary Arterial Hypertension (Pah) (2)</p>
+
+</div>
+<div class="names">
+    <h3>R</h3>
+    <p>Rabies (11)</p>
+    <p>Rheumatoid Arthritis (11)</p>
+    <h3>S</h3>
+    <p>Sanitizer (19)</p>
+    <p>Scabies (84)</p>
+    <p>Scar (17)
+    </p>
+    <p>Schizophrenia (434)</p>
+    <p>Skin Infections (947)</p>
+    <p>Smoking cessation (14)</p>
+    <p>Stretch Marks (14)</p>
+    <p>Sun Protectors (20)</p>
+    <p>Sunscreen Preparations (112)</p>
+    <p>Supplements (4984)</p>
+    <p>Surgicals (28)</p>
+    <p>Syringe (0)</p>
+    <h3>T</h3>
+    <p>Targeted Cancer Therapy (0)</p>
+    <p>Tetanus (3)</p>
+    <p>Thrombotic Disorder (147)</p>
+    <p>Tuberculosis (Tb) (0)</p>
+    <h3>U</h3>
+    <p>Ulcer/Reflux/Flatulence (2293)</p>
+    <p>Ulcerative Colitis/Bowel</p>
+    <p>Urinary Retention (82)</p>
+    <p>Uterus Conditions (59)</p>
+    <p>Uti Infections (5)</p>
+    <h3>V</h3>
+    <p>Vaccines (120)</p>
+    <p>Vaginal Capsules (1)</p>
+    <p>Vaginal Conditions (59)</p>
+    <p>Varicose Veins (22)</p>
+    <p>Vertigo (213)</p>
+    <p>Viral infections (384)</p>
+    <p>Vitamin B12 (0)
+    </p>
+    <p>Vitamin C/Supplements (1)</p>
+    <p>Vitamin D3 (0)</p>
+    <p>Vitamin E (0)</p>
+    <p>Vitiligo (13)</p>
+    <p>Vomitting/Emesis (353)</p>
+    <h3>W</h3>
+    <p>Warts/Calluses/Other Skin Lesion (24)</p>
+    <p>Weight Loss (27)</p>
+    <p>Wound Care (151)</p>
+    <p>Wrinkle/Anti Ageing (8)</p>
+</div>
+ </div>
+   </main>
+</div>
+
+<div id="foot">
+    <div class="netmeds-desc">
+        <div>
+            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+        </div>
+        <div class="netmeds-font">
+            <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies,
+                 with over 100 years’ experience in dispensing quality medicines.</p>
+        </div>
+    </div>
+    <hr style="width: 95%; ">
+    <div style="display: flex;">
+        <div class="about-company">
+            <ul>
+                <li><p> COMPANY</p></li>
+                <li><p>About Netmeds</p></li>
+                <li><p>Customers Speak</p></li>
+                <li><p>In the News</p></li>
+                <li><p>Career</p></li>
+                <li><p>Terms and Conditions</p></li>
+                <li><p>Privacy Policy</p></li>
+                <li><p>Fees and Payments Policy</p></li>
+                <li><p>Shipping and Delivery Policy</p></li>
+                <li><p>Return, Refund and Cancellation Policy</p></li>
+                <li><p>Contact</p></li>
+            </ul>
+            <ul>
+                <li><p>SHOPPING</p></li>
+                <li><p>Browse by A-Z</p></li>
+                <li><p>Browse by Manufacturers</p></li>
+                <li><p>Health Articles</p></li>
+                <li><p>Offers / Coupons</p></li>
+                <li><p>FAQs</p></li>
+            </ul>
+            <ul>
+                <li><p> SOCIAL</p></li>
+                <li><p>Patients Alike</p></li>
+                <li><p>Facebook</p></li>
+                <li><p>Twitter</p></li>
+                <li><p>LinkedIn</p></li>
+                <li><p>Youtube</p></li> 
+        </div>
+        <div class="subscribe-class">
+            <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+            <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+            <form action="">
+                <input id="email"  type="text" placeholder="Enter your email address">
+                <button id="button" title="Go" type="submit">Go</button>
+            </form>
+           <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en" target="blank"> 
+               <img class="play-store"  src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+            </a>
+           <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011" target="blank"> 
+               <img class="play-store" src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+            </a>   
+        </div>   
+    </div>
+    <hr style="width: 95%;">
+    <div class="foot-bottom">
+        <p>Medicine</p>
+        <p>Wellness</p>
+        <p>Lab Test</p>
+        <p>Beauty</p>
+        <p>Copyright© 2022. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
