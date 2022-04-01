@@ -53,6 +53,34 @@ body{
     gap: 20px;   
     box-sizing: border-box;
 }
+.inner-box1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+.inner-box2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+.inner-box3{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+
 
 .inner-box-child{
     border: 2px solid #c9c9c9;
