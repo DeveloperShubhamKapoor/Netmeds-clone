@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    
+
+<style>
+    body{
+        background-color: #f6f6f7;
+        
+    }
+    #bigbox{
+        height:600px;
+        width:95%;
+        margin:auto;
+        background-color: #e0f8ff;
+        padding:20px 0px 40px 20px;
+        display: flex;
+        
+    }
+    .knowprob >img{
+        /* margin-top:50px ; */
+      /* margin-left: 20px; */
+      height:460px;
+      width:910px;
+      
+    }
+    .detailsbox{
+        height:565px;
+        width:400px;
+        /* border:1px solid red; */
+        margin-left:10px;
+        background-color: white;
+       
+      
+    }
+    .detailsbox button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    /* .inputbx{
+        height: 10%;
+        width:80%;
+        border:1px solid;
+        margin:auto;
+        margin-top: 15px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center; */
+
+    
+     button{
+         width: 170px;
+         height: 45px;
+         text-align: left;
+         margin-top: 20px;
+         background-color: white;
+         border: 0.2px solid #c2b9b9;
+         cursor: pointer;
+     }
+     .detailsbox #btn{
+         display: flex;
+         justify-content: space-around;
+     }
+     #btn p{
+         font-size: 14px;
+         font-family: Lato,sans-serif;
+         font-weight:400 ;
+         line-height: 20px;
+         color:#151b39;
+     }
+     #btn img{
+         width: 30px;
+         height: 30px;
+         margin-left: -37px;
+         margin-right: 0px;
+     }
+     .pleasefill{
+         font-family: Lato,sans-serif;
+         font-size:14px ;
+         font-weight:400 ;
+         line-height:24px ;
+         color:#151b39;
+         margin-left: -1px;
+     }
+     h4{
+         color:#02b7c2;
+         font-weight: 700;
+         font-size:15px ;
+         line-height: 16px;
+         font-family: Lato,sans-serif;
+     }
+
+     select{
+         width:300px;
+         height:35px;
+         color:#999999;
+         font-weight: 400;
+         font-size:16px ;
+         font-family: Lato,sans-serif;
+         line-height:24px ;
+     }
+     select>option{
+         
+       Color:#16181b;
+       font-family: Lato, sans-serif;
+       font-size:16px ;
+       font-weight: 400;
+       line-height:23px ;
+     }
+     .input{
+         border:0px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+         width:90%;
+         height: 30px;
+     }
+     .checkbox{
+         margin-top: 10px;
+         font-size: 13px;
+         line-height: 19px;
+         font-weight: 400;
+         color:#000000;
+     }
+     .checkbox label
+     {
+       
+        display:flex;
+       
+     }
+     .checkbox p{
+         /* font-weight: bold; */
+         margin-top:-1px;
+         margin-left: -1px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height:19px ;
+        font-family: Lato,sans-serif;
+        color:#151b39;
+     }
+     .booknow{
+         width:90%;
+         height:50px;
+         margin-top: 1px;
+         box-sizing: border-box;
+         background-color: #24aeb1;
+         color:#ffffff;
+         font-size:13px ;
+         font-family: Lato,sans-serif;
+         font-weight:400 ;
+         line-height: 19px;
+         cursor:pointer;
+     }
+     .boxsizing{
+         padding-left:20px;
+         box-sizing: border-box;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+         font-weight: 500;
+     }
+     .input{
+         margin-top: -20px;
+         cursor: pointer;
+     }
+    
+     /* <..................................................................................................> */
+     .popular{
+         margin: auto;
+         margin-top: 50px;
+         height:300px;
+         width:90%;
+         background-color: #ffffff;
+         color:#151b39;
+         font-family: LatoBold;
+         font-weight:500 ;
+         /* font-size:15px ; */
+         /* line-height:34px ; */
+         /* border:1px solid red; */
+
+     }
+     .popular p{
+         color:rgba(21, 27, 57, 0.6);
+         font-size:16px ;
+         font-family: Lato, sans-serif;
+         font-weight: 400;
+         line-height:23px ;
+     }
+     .popular h1,p{
+         margin-left: 25px;
+
+     }
+     #container{
+         height:190px;
+         width:90%;
+         /* border:1px solid red; */
+         margin:auto;
+         display: grid;
+         grid-template-columns: repeat(5,1fr);
+         grid-template-rows: repeat(2,90px);
+         gap:15px;
+         
+     }
+     #container div{
+         border:0px solid green;
+     }
+     #container >div>p{
+         /* display: flex; */
+         justify-content: center;
+         align-items: center;
+         font-size: 16px;
+         font-family: Lato, sans-serif;
+         font-weight:400 ;
+         color:#151b39 ;
+         line-height: 24px;
+     }
+     #bestprice{
+         color:rgba(21, 27, 57, 0.6);
+         font-family: Lato, sans-serif;
+         font-size:16px ;
+         font-weight:700 ;
+         line-height:31px ;
+     }
+     /* <..................................................................................> */
+    .topselling{
+        margin-left: 100px;
+        Color:#151b39;
+        /* font-family: Lato;
+        font-weight: 500;
+        line-height: 34px;
+        font-size: 28px; */
+    }
+    .topselling p{
+        margin-left: 0px;
+        color:rgba(21, 27, 57, 0.6);
+        font-size: 16px;
+        line-height: 23px;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+    }
+    .grid{
+        height:500px;
+         width:90%;
+         /* border:1px solid red; */
+         margin:auto;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-template-rows: repeat(2,330px);
+         gap:20px;
+         box-sizing: border-box;
+    }
+    .grid >div{
+        /* border:1px solid green; */
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .grid>div>h3,.booknowgrid{
+        margin-left: 22px;
+        font-family:LatoBold ;
+        font-weight:700 ;
+        font-size:20px ;
+        line-height: 24px;
+        
+Color:
+#151b39;
+    }
+    .grid>div>img{
+        height:130px;
+        width:200px;
+        margin-left: 100px ;
+       
+        
+    }
+    /* .grid>div>img:nth-child(1),:nth-child(7)
+    {
+         background-color: #fff4eb;
+    } */
+    .booknowgrid{
+        background-color: white;
+        color:#24aeb1;
+        border:0px;
+        height:40px;
+        width:120px;
+        margin-top: -5px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        font-family: Lato, sans-serif;
+        
+    }
+    .booknowgrid:hover{
+          cursor:pointer;
+    }
+    .child{
+        background-color:#ebfffc ;
+    }
+   
+    .oneseven
+    {
+        background-color: #fff4eb;
+    }
+    .twoeight
+    {
+        background-color:#eafaff ;
+    }
+    .threesix
+    {
+        background-color:#f6fae8 ;
+    }
+   
+   .rs
+    {
+        /* color: red; */
+        font-size: 21px;
+        font-weight: 700;
+        font-family:Lato, sans-serif ;
+        color: #ef4281;
+        line-height:30px ;
+    }
+    .grid>div>p{
+         /* color:#8b8987; */
+         
+Color:
+rgba(21, 27, 57, 0.6);
+        line-height: 19px;
+        font-weight: 400;
+        line-height: -14px;
+        font-family: Lato, sans-serif;
+        font-size: 13px;;
+    }
+    .startingone{
+        color:black;
+        font-size:13px;
+    }
+    .starting
+    {
+        color:#151b39 ;
+        font-size:13px;
+        text-decoration: line-through;
+        font-family:Lato, sans-serif ;
+        font-weight: 400;
+        line-height:19px ;
+    }
+    #imageside {
+        margin-top: -27px;
+       border-top-left-radius: 100px ;
+       margin-right: -28px;
+       background-color: transparent;
+    }
+    #imagesideone{
+        margin-top: -40px;
+        border-top-left-radius: 100px ;
+        margin-right: -88px;
+        background-color: transparent;
+    }
+    #imagesidethree{
+        margin-top: -69px;
+        border-top-left-radius: 200px ;
+        background-color: transparent;
+       
+    }
+    #five{
+        margin-top: -65px;
+        background-color: transparent;
+    }
+    #belbox{
+        height:280px
+    }
+    #hand{
+        margin-top: -20px;
+    }
+    /* <...............................................................................................> */
+     .cusspeak{
+         /* border:1px solid red; */
+         margin-top: 220px;
+         margin-left: 80px;
+     } 
+     #cusspeakhead{
+         color:#151b39;
+     }   
+     #cusspeakpara{
+         color:rgba(21, 27, 57, 0.6);
+         font-size:16px ;
+         font-weight:400 ;
+         font-family: Lato,sans-serif;
+         line-height:23px ;
+     }
+     .cusspeak p{
+        margin-left: 0px;
+        color:#868688;
+        font-size: 17px;
+     }
+     /* <............................> */
+       /* .starbox{
+          border:1px solid red;
+           height:230px; 
+          width:72%;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+      } 
+      .starbox>div{
+          border:1px solid #97cbce;
+          height:100%; 
+          width:31%;
+          background-color: #ffffff ;
+          border-radius: 10px;
+          display:flex
+       } 
+       .starname{
+          height:50px;
+          width:90%;
+          border-bottom: 1px solid red;
+          
+      }
+      .stbox{
+          display:flex;
+          justify-content: space-between;
+          
+      }
+      .namebox{
+          height:35%;
+          width:90%;
+          border-bottom:1px dashed #4eb9c1;;
+          margin-left:15px;
+          margin-top: 10px;
+          display:flex;
+      }
+      .namebox>div{
+          height:100%;
+          width:50%;
+          border:1px solid green;   
+      }  
+       .namebox>div>p{
+          margin-left:0px;
+          margin-top: -10px;
+          color:#4bbecc;
+      }
+     .fivestar{
+         height:25px;
+         width:60%;
+         border:1px solid green;
+         margin-top: 25px;
+         margin-left: 70px;
+        }
+      .str{
+          font-size: 10px;
+          color: #4eb9c1;
+      }   
+    
+      .icon{
+         
+          height:130px;
+          width:600%;
+          border:1px solid red;
+          margin-top:85px;
+          margin-left: -40px;
+          margin-right: 10px;
+          padding-right:70px;
+        } 
+         .icon p{
+            font-size: 16px;
+        }   */
+        .maincontainer{
+            height:260px;
+            width:75%;
+            margin: auto;
+            border:0px solid red;
+            display: flex;
+        }
+        #containerone{
+    width: 29%;
+    height: 250px;
+    border: 1px solid  #63c1c2;
+    margin: auto;
+    margin-top: 0px;
+} 
+​
+.first-box{
+    width: 25%;
+    height: 300px;
+    border: 0px solid blue;
+    margin-top:10px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.name-div{
+    height: 90px;
+    border-bottom: 1px dashed #63c1c2;
+    width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.cust-review{
+    font-size: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+
+.cust-review >p::before{
+    /* content: open-quote; */
+    font-size: 70px;
+    margin-top: 10px;
+    display: inline-block;
+    line-height: 0px;
+}
+.cust-review >p{
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #151b39;
+} 
+#details{
+    width:50%;
+    height:100px;
+    border:0px solid red;
+    text-align: center;
+    align-items: center;
+    
+}
+#details h2{
+    color:#151b39;
+    font-family: Lato,sans-serif;
+    font-weight: 700;
+    font-size:20px ;
+    line-height: 29px;
+    margin-left: -15px;
+}
+
+#details p{
+    margin-left: -75px;
+    margin-top: -14px;
+    font-family: Lato,sans-serif;
+    Color:#12b7c1;
+    font-size:15px ;
+    font-weight: 400;
+    line-height:21px ;
+
+  
+}
+#icon{
+    width:50%;
+    height:100px;
+    border:0px solid red;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #24aeb1;
+    
+}
+#our{
+    margin-left: 80px;
+}
+.Highlights{
+    height: 65px;
+    width:86%;
+    border:0px solid teal;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+} 
+.Highlights div{
+    height:100%;
+    width:23%;
+    border:0px solid red;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.Highlights>div>h3{
+    margin-left: 65px;
+}
+.partner{
+    height:300px;
+    width:90%;
+    margin-top: 40px;
+    border: 0px solid red;
+    margin-left:79px ;
+    background-color: #ffffff;
+    border-radius: 0.5px;
+    padding: 15px;
+}
+
+.partner p{
+    margin-left: 0px;
+    margin-top: -5px;
+    color: rgba(21, 27, 57, 0.6);
+    font-family: Lato,sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    line-height:23px ;
+
+}
+#adone{
+    height:80px;
+    width:75%;
+    border:0px solid red;
+    margin: auto;
+    display: flex;
+}
+#adone div{
+    height:90%;
+    width:20%;
+    border:0px solid green;
+    justify-content: space-evenly;
+
+}
+#adone>div img{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.imagelast {
+    margin-top: 10px;
+}  
+.twobox{
+    height:60px;
+    width:28%;
+    margin-top:29px ;
+    margin-left: 450px;
+    border: 0px solid red;
+    display: flex;
+}
+.twobox div{
+    height:100%;
+    width:50%;
+    border: 0px solid teal;
+}
+.greenbox{
+    height:100px;
+    width:91.8%;
+    border:0px solid red;
+    margin-left:84px ;
+    background-color: #e6f9e7;
+    display: flex;
+}
+.wp img{
+    height: 50px;
+    width:50px;
+}
+.wp{
+    margin-left:370px ;
+    margin-top: 20px;
+}
+
+.whatsapp{
+    border:0px solid black;
+    
+}
+#bookwp{
+    margin-left: 0px;
+    
+}
+#num{
+    margin-top: -4px;
+}
+.greenbox button{
+    color:white;
+    background-color: #24aeb1;
+    border-radius: 10px;
+    height:67px;
+    width:20%;
+    
+}
+.greenbox>button {
+    margin-left: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.finalbox{
+    
+    height:80px;
+    width:95%;
+    border:0px solid;
+    margin-left:60px ;
+    background-color: #24aeb1;
+    color:white;
+    
+}
+.finalbox div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cerlabs{
+    margin-top: -22px;
+}
+.cerlabs span{
+     color:#4adbe0;
+}
+.finals{
+    height:30px;
+    width:20%;
+    border:0px solid;
+    margin-left: 630px;
+    margin-top: -13px;
+}
+.finals span{
+    color:blue;
+}
+.finalstyle{
+    background-color: #ffffff;
+    height:45px;
+    width:53px;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+.finalp{
+    margin-top: -28px;
+    margin-left: 65px;
+    font-size: 18px;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lone{
+    background-color: #ffffff;
+    height:40px;
+    width:40px;
+}
+.home{
+    margin-left: 2px;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="bigbox">
+        <div class="knowprob"><img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1635266868_WhatsApp_Image_2021-10-26_at_21.56.07.jpg"/></div>
+        <div class="detailsbox">
+            
+            <div id="btn">
+                 <button>
+                <img  src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/diagnostics/pathology.png" alt="">
+                <p>Pathology</p>
+            </button>
+            <button>
+                <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/diagnostics/radiology.png" alt="">
+                <p>Radiology</p>
+            </button>
+        </div>
+        <div class="boxsizing">
+           <p class="pleasefill">Please fill in your details</p>
+           <h4>NAME</h4>
+           <input class="input" type="text" placeholder="">
+           <h4>MOBILE NUMBER</h4>
+           <input class="input" type="number" placeholder="">
+           <h4>PINCODE  </h4>
+           <input class="input" type="number" placeholder="">
+            <h4>CHOOSE PACKAGE</h4>
+          <select class="input" name="" id="select"><option  value="">Select </option>
+             <option>  Netmeds Swasthiya</option>
+             <option > Fever Profile </option>
+             <option > Anaemia Profile  </option>
+             <option > Thyroid Test </option>
+             <option > Basic Allergic Package </option>
+             <option > Netmeds Healthy Heart </option>
+             <option > Advanced Heartcare </option>
+             <option > Netmeds Diabetic Checkup </option>
+             <option > Vitamin Test </option>
+             <option > Netmeds Advanced Care </option>
+             <option > Covid Antibody GT Profile </option>
+             <option >  Covid Antibody IGG</option>
+             <option >   Covid Antibody Total</option>
+             <option > Covid Antibody Panel</option>
+             <option > Aarogyam C </option>
+             <option >  Aarogyam B </option>
+             <option >  Aarogyam A </option>
+             <option >   Aarogyam 1.3</option>
+             <option >  Aarogyam X </option>
+             <option > Netmeds A </option>
+             <option > Netmeds B </option>
+             <option>other</option>
+
+         </select>
+          <div class="checkbox">
+           
+            <label for="checkbox">
+                <input class="checkboxnext" type="checkbox"> 
+                <p>I agree to Netmeds Terms and Conditions.</p>
+            </label>
+           
+          </div> 
+          <button class="booknow">BOOK NOW</button>
+        
+    </div> 
+</div>
+    </div> 
+    <!-- <.....................................................................................................................................................> -->
+    <div class="popular">
+        <h1>Popular Tests</h1>
+        <p>and many more tests and packages <split id="bestprice"> @ THE BEST PRICES</split></p>
+        <div id="container">
+            <div >
+                <span> <img class="finalstyle"  src="https://reportcard.trca.ca/app/uploads/2018/03/Indicator_SurfaceWater.png" alt=""></span>
+                <span> <p class="finalp">Complete Hemogram</p></span>
+               
+              
+            </div>
+            <div>
+                <span><img class="finalstyle" src="https://image.shutterstock.com/image-vector/human-liver-icon-twocolor-symbol-260nw-2030431880.jpg" alt=""></span>
+                <span>  <p class="finalp" >Liver Profile</p></span>
+              
+            </div>
+            <div>
+                <span><img class="finalstyle" src="https://stemcellthailand.org/wp-content/uploads/2020/10/gastroenterology-digestive-liver-colorectal.png" alt=""></span>
+                <span><p class="finalp" >Diabetes</p></span>
+               
+            </div>
+            <div>
+                <span><img class="finalstyle" src="https://assets.technologynetworks.com/production/dynamic/images/content/320774/single-gut-bacteria-enterotype-associates-multiple-types-of-inflammatory-bowel-disease-320774-480x270.jpg?cb=10237512" alt=""></span>
+                <span>  <p class="finalp" >Lipid Profile</p></span>
+              
+            </div>
+            <div>
+                <span><img class="finalstyle" src="data:image/png;base64,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" alt=""></span>
+                <span><p class="finalp" >Thyroid Profile</p></span>
+               
+            </div>
+            <div>
+                <span><img class="finalstyle" src="https://cdn1.vectorstock.com/i/thumb-large/36/55/nanotechnology-blue-round-icon-vector-15643655.jpg" alt=""></span>
+                <span>  <p class="finalp" >Iron Deficiency</p></span>
+              
+            </div>
+            <div>
+                <span><img class="finalstyle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AqLAApa2Kz9Nvw8hmwshBtbyW0NQAo6zI5egAoarx+voAqK8Apaz2/Pyt3N/p9vcbrrVXub/C5efW7u98yc6n2d2T0tbg8vPO6+wxsLee19qQ0NS54eRMub/R7O7kU9Q8AAAEvElEQVR4nO2d7XajKhSGFROHWvEjxqbHpOb+7/Kw0bYnSKY6YyKb8z5rfswy/uApCJsNShQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAwLock0Nqsz9VWxdrPdpMiNhCCCnPWxdsLfbS1hvJkq2Ltg5NZqpsAikety7cKqTaRe5/2fT6smi3LtwaFFSDF8cPO63YPb04D6CgKvzH8UOpf6ifXpwHYAwbxw8wZAMM+QND/vwPDGXw46GOaeSb44dLKDFN1FHYdn6xOVFceti6cKvwRpMnOYXmFq7nkyHpZPr7OQvuty7aShSpewocSBs1tGIyCdYX0q2LtRrNwfgUr98UZ3PpXGxdtjVoamlq8HY635iGK7OEvWMxpqGEtHKH9dD9yNgVDDCiio2IlHs7OVr1cnDPyk1KthKDoIidyd/q3BnH7OPp5VqN16Ehnu7e0Ji/gOSbUxyG+vff3XIw1fisAq3NxZT+h9UJkzbdPadAa/NOguLH5RfzKF6fUaDVoTY6oxe5UtKf5SyKlitmRZ7tvSSA76TURl9n3FgwjVGP+ikU81bPqEdiuApFbW9WFephk+cq1JJBgFah2I2Jzb0M21/f7AvJomqhCr8f2/lJuihS2Qt2ORtKA4v506I3qsQHFucBXOnJ+m3IfQMNLdn8233gg+pwfoLCZP5fHlie9TnJZbFmvKhR+0CysOvodB3y2iGlI5pF+d6U3XChoxSxX3B/OjuI9QUY2sDQP2BoA0P/gKENDP0DhjYw9A8Y2sDQP+4Zlr07VxGMYZMp99aLUAxfRZznzvR9KIapyjWuhe9ADE9aUJBjER27w83KWxiGVy2o3rSg6qJayJtVjSAMC2qgbXSUWrGv89tkYxCGe12FtDW/GdpqeIYltVGz+HIe+pvQDCvdOM07CUVa50EaJmJ0upgaDNCwzFRuVtvOWaCGUdmOA/0llUoqpUIaLYoPa3n3vfnV727WT3kbXoX6cQWbtWGrHzzlXkt8/4rcGBtWnek7lWvb2i772szA17BRJtR2VmKR5V/dDV/DOB9xPYl5nH/uZuBrWItxgHdVYq9yNfaofA2rfUthqP4npzsx9Xzxc8LP15D+q2uq1RHN9CY9yxDjFhPWhrl+3KIyuUldVC3loyrtPt7E2VBPKpQ923+RwqTc6AEdrnA2/NCG1pvcFHwr8qEGPNQtZ8NEdye3I8WOuteaOp5S5ONrCJwNU9IZ6UqaAZvxo+vT9NCPdcnasJD5f8iqKPm+QOGOGvb3MTaMlHIaxvn4PvfwKglnw6arv6EOdAjFuyFbk9dDSM7ZcMqBMqbWCyRhGZrONLvd8xyYYZRkynrPKTTDqDxY7yUGZzgBhv4BQxsY+gcMbWDoHzC0gaF/wNAGhv4BQxsY+gcMbWDoHzC0gaF/wNAGhv4BQxsY+gcMbWDoHzC0gaF/wNAGhv4BQxt+hu0ffDeR11cF6duXM78ETdAH6iWvQyCO2ZKzjgo69MrxQobX0Ef1RZxMTpB10dIpF4seWx8wByO4TgF2Ec/9QL1XlNmdg7rch1ux+5y35lrL6Wncbj0hO16fSf7kY9dPTlR30e84nv0AAAAAAAAAAAAAAAAAAAAAAAAAAAAA8JF/AU9cOVaRVYwlAAAAAElFTkSuQmCC" alt=""></span>
+                <span><p class="finalp" >Vitamin</p></span>
+                
+            </div>
+            <div>
+                <span><img class="finalstyle" src="https://ak4.picdn.net/shutterstock/videos/15493414/thumb/2.jpg?ip=x480" alt=""></span>
+                <span>  <p class="finalp" >Testosterone</p></span>
+              \
+            </div>
+            <div>
+                <span><img class="finalstyle" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/uti-causes-kidney-stones-1556827062.png?crop=1xw:1xh;center,top&resize=480:*" alt=""></span>
+                <span> <p class="finalp" >Kidney Function Test</p></span>
+               
+            </div>
+        </div>
+    </div>
+        <!-- <..............................................................................> -->
+    <div class="topselling">
+        <h1>Top Selling Packages</h1>
+        <p>Choose from the list of top-selling packages tailored for you. We care for your health!</p>
+    </div>
+    <div class="grid">
+        <div class="oneseven" >
+            <h3>Netmeds Swasthya</h3>
+            <p>Book Regular Health Check-up Package Netmeds Swasthya, a Basic Screening Preventive Health Check-up Profile including 64 tests.</p>
+            <p> <split class="starting">Rs.3200</split> <split class="rs"> Rs.1200</split></p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img class="oneseven" id="imagesideone" src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/family.png" alt="">
+        </div>
+        <div class="twoeight">
+            <h3>Netmeds Shield Pack</h3>
+            <p>Netmeds Shield Pack helps to protect against a particular danger or risk. It includes a unique diagnostic profile of 56 tests for a comprehensive health evaluation.</p>
+            <p> <split class="starting">Rs.3000</split> <split class="rs">Rs.900</split> </p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img class="twoeight" id="imageside" src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Aarogyam-1.3.png
+            " alt="">
+        </div>
+        
+        <div class="threesix">
+            <h3>Netmeds Health Pack</h3>
+            <p>Health check-ups are very useful in the early detection of all types of illnesses and risk factors. Simple to understand and less time consuming, our Netmeds Health Pack comprises of 35 parameters of regular tests that have been specially designed keeping your health in mind.</p>
+            <p> <split class="starting">Rs.1699</split> <split class="rs">Rs.499</split> </p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img class="threesix" id="imagesidethree" src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Allergy.png" alt="">
+        </div>
+        <div class="child">
+            <h3>Netmeds Diabetic Checkup</h3>
+            <p>Meant for people who want to get regular reports to prevent/check their diabetes levels. It includes 49 tests.</p>
+            <p> <split class="starting">Rs.3450</split> <split class="rs">Rs.899</split> </p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img id="hand" src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Diabetes.png" alt="">
+        </div>
+        <div class="child" id="belbox">
+            <h3>ECHO</h3>
+            <p>Echocardiography or ECHO, is a painless test that uses sound waves to create moving pictures of your heart.</p>
+            <p> <split class="startingone">Starting</split>  @ <split class="rs"> Rs.1600</split></p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img id="five" src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Fever.png" alt="">
+        </div>
+        <div class="threesix" id="belbox">
+            <h3>ECG</h3>
+            <p>An ECG is a simple and valuable test. Sometimes it can definitely diagnose a heart problem. The electrocardiogram (ECG)...</p>
+            <p> <split class="startingone">Starting</split>  @<split class="rs">Rs.250</split> </p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img  id="five" class="threesix"  src="	https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Netmeds-Health-Pack.png" alt="">
+        </div>
+        <div class="oneseven" id="belbox" >
+            <h3>PET Scan</h3>
+            <p>PET scan may detect the early onset of disease before other imaging tests can.</p>
+            <p> <split class="startingone">Starting</split>  @ <split class="rs">Rs.9600</split></p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img  id="five" class="oneseven"  src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Antenatal_Care.png" alt="">
+        </div>
+        <div class="twoeight" id="belbox">
+            <h3>Ultrasound Whole Abdomen</h3>
+            <p>Ultrasound is used to study the development of an unborn baby, abdominal and pelvic organs and blood vessels.</p>
+            <p> <split class="startingone">Starting</split>  @ <split class="rs">Rs.999</split> </p>
+            <button class="booknowgrid">BOOK NOW</button>
+            <img  id="five" class="twoeight" src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/pathology/Aarogyam-1.3.png
+            " alt="">
+        </div>
+    </div>    
+    <!-- <................................................................................................> -->
+      <div class="cusspeak">
+          <h1 id="cusspeakhead">Customer Speak</h1>
+          <p id="cusspeakpara">Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</p>
+      </div>
+      <!-- <..........................................................................................................> -->
+      <!-- <div class="starbox">
+           <div class="stbox">
+
+            <div class="namebox">
+                <div>
+                    <h3>Ram Kumar</h3>
+                       <p>Mumbai</p>
+                </div>
+                <div >
+                    <div class="fivestar">
+                        <i class="fa fa-star str"  aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="icon" >
+                -->
+           <!-- <p> <i class="fa-solid fa-quote-left"></i><br> This is the best lab test experience ever! And that too at a very reasonable rate! I highly recommend Netmeds Swasthya package. Value for money!</p> 
+          </div> 
+              
+                  
+           </div>
+          
+           <div>
+               
+           </div>
+           <div></div>
+      </div> --> -->
+      <div class="maincontainer">
+        <div id="containerone">
+            <div class="first-box">
+                <div class="name-div">
+                    <div id="details">
+                        <h2>Ram Kumar</h2>
+                        <p>Mumbai</p>
+                    </div>
+                    <div id="icon">
+                        <i class="fa fa-star str"  aria-hidden="true"></i>
+                            <i class="fa fa-star str" aria-hidden="true"></i>
+                            <i class="fa fa-star str" aria-hidden="true"></i>
+                            <i class="fa fa-star str" aria-hidden="true"></i>
+                            <i class="fa fa-star str" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="cust-review">
+                    <p> This is the best lab test experience ever! And that too at a very reasonable rate!
+                         I highly recommend Netmeds Swasthya package. Value for money!</p>
+                </div>
+            </div>
+           
+       </div>
+
+       <div id="containerone">
+        <div class="first-box">
+            <div class="name-div">
+                <div id="details">
+                    <h2>Ranjith Singh</h2>
+                    <p>New Delhi</p>
+                </div>
+                <div id="icon">
+                    <i class="fa fa-star str"  aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                        <i class="fa fa-star str" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="cust-review">
+                <p> If you want a full body health report that won't cost a bomb but give accurate results, 
+                    try Netmeds Swasthya Plus! Thyrocare Labs and Netmeds have done a great job on this one!</p>
+            </div>
+        </div>
+       
+   </div>
+
+   <div id="containerone">
+    <div class="first-box">
+        <div class="name-div">
+            <div id="details">
+                <h2 >Veena Nair</h2>
+                <p class="veenanair">  Chennai</p>
+            </div>
+            <div id="icon">
+                <i class="fa fa-star str"  aria-hidden="true"></i>
+                    <i class="fa fa-star str" aria-hidden="true"></i>
+                    <i class="fa fa-star str" aria-hidden="true"></i>
+                    <i class="fa fa-star str" aria-hidden="true"></i>
+                    <i class="fa fa-star str" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="cust-review">
+            <p> I've done lab tests before. The process seemed so off-putting. But with Netmeds 
+                it has been so easy and professional! The phlebotomist took great care when drawing the blood etc. He was very reassuring </p>
+        </div>
+    </div>
+   
+</div>
+      </div>
+      <h1 id="our">Our Highlights</h1>
+      <div class="Highlights">
+              <div class="one">
+                  <span><img class="lone" src="https://previews.123rf.com/images/scanrail/scanrail1012/scanrail101200001/8325716-test-tubes.jpg" alt=""></span>
+                  <span> <h3  class="home">Home Sample Collection</h3></span>
+                
+              </div>
+              <div class="one">
+                
+                <span><img class="lone" src="https://www.supplyshift.net/wp-content/themes/wordless/assets/images/icon-multi-tier-traceability-tools.png" alt=""></span>
+                <span> <h3  class="home">2000+ Location Served </h3></span>
+                 
+              </div>
+              <div class="one">
+                <span><img class="lone" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGkvo1rUEuU8g/company-logo_200_200/0/1519890596281?e=2147483647&v=beta&t=6lJMj5crRB-lbnD7ZAnQjIPv1niFG1XPWYCW6TCiET8" alt=""></span>
+                <span> <h3  class="home">NABL, CAP ISO Certified </h3></span>
+                 
+              </div>
+              <div class="one">
+                <span><img class="lone" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-80-discount-promotion-tag-png-image_5551667.jpg" alt=""></span>
+                <span> <h3  class="home">Upto 80% Discount </h3></span>
+                  
+              </div>
+      </div>
+       <div class="partner">
+              <h1>Lab Partner</h1>
+              <p>We provide lab tests and health packages from well-reputed, certified diagnostic labs across the country.</p>
+              <div id="adone">
+                  <div>
+                      <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Apllo_clinic.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/SRL_Diagnostics.jpg" alt="">
+                  </div>
+                  <div>
+                      <img  src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Healthians.jpg" alt="">
+                  </div>
+                  <div>
+                      <img  src="https://www.netmeds.com/images/cms/wysiwyg/Diagnostics/2021/thyrocare_logo.jpg" alt="">
+                  </div>
+                  <div class="imagelast" >
+                      <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Niramaya.jpg" alt="">
+                  </div>
+              </div>
+              <div class="twobox">
+                     <div> <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Neuberg.jpg" alt=""> </div>
+                     <div> <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Mahajan-Imaging.jpg" alt=""> </div>
+              </div>
+       </div>
+       <div class="greenbox">
+            <div class="wp">
+                <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/home/wsp.png" alt="">
+            </div>
+            <div class="whatsapp">
+                <p id="bookwp">Book on Whatsapp</p>
+                <h2 id="num">9384811129</h2>
+            </div>
+            <button> <h3> BOOK NOW</h3></button>
+       </div>
+        <div class="finalbox">
+             <div class="ffbx">
+                 <p> ultrasound | Xray | MRI | CT Scan | PET Scan </p>
+                 
+             </div>
+             <div class="cerlabs">
+                <p> <span>Certified Labs</span> | Best Price | Assured Quality  </p>
+             </div>
+        </div>
+        
+         <div class="finals">
+             <p>Automation powered by <span>Breakout</span> </p>
+         </div>
+
+    </body>
+</html>
