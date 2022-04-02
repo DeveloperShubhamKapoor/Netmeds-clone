@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Library</title>
+    <style>
+        body{
+            margin: 0px;
+
+        }
+
+        #p1{
+            margin-top: 200px;
+            margin-left: 280px;
+            color: #0B7E81;
+            font-size: 14px;
+        }
+        #h2-1{
+            margin-left: 280px;
+            margin-bottom: 30px;
+        }
+        #container{
+            height: 40px;
+            width: 1000px;
+            margin: auto;  
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(1, 1fr) ;
+            grid-gap: 21px;
+        }
+        .c-boxes{
+            height: 37px;
+            width: 141px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 4px;
+        }
+        #container > :nth-child(1){
+            width: 50px;
+            margin-left: 30px;
+        }
+        #container > :nth-child(1) > p{
+            font-size: 14px;
+            margin-left: 13px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(2) > p{
+            font-size: 14px;
+            margin-left: 20px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(2){
+            width: 95px;
+            
+        }
+        #container > :nth-child(3) > p{
+            font-size: 14px;
+            margin-left: 18px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(3){
+            width: 135px;
+           
+        }
+        #container > :nth-child(4) > p{
+            font-size: 14px;
+            margin-left: 18px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(4){
+            width: 70px;
+          
+        }
+        #container > :nth-child(5) > p{
+            font-size: 14px;
+            margin-left: 18px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(5){
+            width: 90px;
+           
+        }
+        #container > :nth-child(6) > p{
+            font-size: 14px;
+            margin-left: 18px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(6){
+            width: 110px;
+          
+        }
+        #container > :nth-child(7) > p{
+            font-size: 14px;
+            margin-left: 18px;
+            margin-top: 11px;
+        }
+        #container > :nth-child(7){
+            width: 80px;
+           
+        }
+        #container > :nth-child(8){
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 220px;
+            border-radius: 4px;
+        }
+        #container-2{
+            height: 650px;
+            width: 1000px;
+            margin-left: 280px;
+            margin-top: 30px;
+        }
+        #c-2-1{
+            height: 650px;
+            width: 332px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+        }
+        #c-2-2{
+            height: 310px;
+            width: 190px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-left: 352px;
+            margin-top: -653px;
+            border-radius: 10px;
+        }
+        #c-2-3{
+            height: 320px;
+            width: 190px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-left: 352px;
+            margin-top: 17px;
+            border-radius: 10px;
+        }
+        #c-2-4{
+            height: 310px;
+            width: 190px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-left: 560px;
+            margin-top: -652px;
+            border-radius: 10px;
+        }
+        #c-2-5{
+            height: 320px;
+            width: 190px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-left: 560px;
+            margin-top: 17px;
+            border-radius: 10px;
+        }
+        #c-2-6{
+            height: 570px;
+            width: 220px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-left: 780px;
+            margin-top: -651px;
+            border-radius: 10px;
+        }
+        #c-2-1 > img{
+            height:424px;
+            width: 332px;
+            border-radius: 10px;
+        }
+        #c-2-2 > img{
+            height:190px;
+            width: 190px;
+            border-radius: 10px;
+        }
+        #c-2-3 > img{
+            height:190px;
+            width: 190px;
+            border-radius: 10px;
+        }
+        #c-2-4 > img{
+            height:190px;
+            width: 190px;
+            border-radius: 10px;
+        }
+        #c-2-5 > img{
+            height:190px;
+            width: 190px;
+            border-radius: 10px;
+        }
+        .c2-h2{
+            margin-left: 13px;
+            font-size: 20px;
+        }
+        #c-2-1 > :nth-child(3){
+            margin-top: -10px;
+        }
+        #c-2-1 > :nth-child(4){
+            margin-left: 13px;
+            font-size: 17px;
+            color: grey;
+        }
+        #c-2-2 > :nth-child(2){
+            margin-top: 5px;
+        }
+        #c-2-2 > :nth-child(3){
+            margin-top: -12px;
+        }
+        #c-2-2 > :nth-child(4){
+            margin-top: -10px;
+            margin-left: 13px;
+            color: grey;
+        }
+        #c-2-3 > :nth-child(2){
+            margin-top: 5px;
+        }
+        #c-2-3 > :nth-child(3){
+            margin-top: -15px;
+        }
+        #c-2-3 > :nth-child(4){
+            margin-top: -12px;
+            margin-left: 13px;
+            color: grey;
+        }
+        #c-2-4 > :nth-child(2){
+            margin-top: 7px;
+        }
+        #c-2-4 > :nth-child(3){
+            margin-top: -15px;
+        }
+        #c-2-4 > :nth-child(4){
+           margin-left: 13px;
+           margin-top: -10px;
+           color: grey;
+        }
+        #c-2-2, #c-2-4{
+            padding-bottom: 10px;
+        }
+        #c-2-5 > :nth-child(2){
+            margin-top: 7px;
+        }
+        #c-2-5 > :nth-child(3){
+            margin-top: -15px;
+        }
+        #c-2-5 > :nth-child(4){
+            margin-left: 13px;
+            margin-top: -10px;
+            color: grey;
+        }
+       #c-2-4{
+           margin-bottom: -1px;
+           margin-top: -660px;
+       }
+     #c-2-6{
+         margin-top: -650px;
+     }
+     #c-2-6 > :nth-child(1){
+         margin-top: 15px;
+         margin-left: 15px;
+         font-size: 15px;
+         color: rgb(56, 51, 51);
+     }
+     .c26-p{
+         margin-left: 15px;
+         font-size: 13px;
+         color: grey;
+     }
+     #c-2-6 > hr{
+         margin-left: 15px;
+         margin-right: 15px;
+         margin-top: 18px;
+         color: rgb(210, 206, 206);
+     }
+     #c-2-6 > :nth-child(13){
+       
+         margin-left: 15px;
+         font-size: 15px;
+         color: rgb(56, 51, 51);
+     }
+     #c-2-6{
+         padding-bottom: 10px;
+     }
+     #mtmo{
+         margin-top: 100px;
+         margin-left: 300px;
+         font-size: 13px;
+         color: rgb(98, 94, 94)
+     }
+     #mtmo2{
+      margin-top: -15px;
+         margin-left: 300px;
+         font-size: 13px;
+         color:grey;
+     }
+     #nv{
+        margin-top: -10px;
+         margin-left: 300px; 
+     }
+     #container-3{
+         height: 350px;
+         width: 1000px;
+        margin-left: 280px;
+        margin-top: 35px;
+        display: flex;
+       
+     }
+     #c3-1{
+         height: 350px;
+         width: 50%;
+     }
+     #c3-2{
+         height: 300px;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 25px;
+     }
+     #c3-3{
+        height: 300px;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 25px;
+     }
+     #c3-1 > img{
+        width:100%;
+        border-radius: 10px;
+     }
+     #c3-1 > :nth-child(2){
+         font-size: 18px;
+         margin-left: 20px;
+     }
+     #c3-1 > :nth-child(3){
+         margin-left: 20px;
+         color: grey;
+     }
+     #c3-2 > img{
+         width: 100%;
+         height: 45%;
+     }
+     #c3-2 > :nth-child(2){
+         font-size: 18px;
+         margin-left: 15px;
+     }
+     #c3-2 > :nth-child(3){
+         color:grey;
+         margin-left: 15px;
+     }
+     #c3-3 > img{
+         width: 100%;
+         height: 45%;
+     }
+     #c3-3 > :nth-child(2){
+         font-size: 20px;
+         margin-left: 15px;
+     }
+     #c3-3 > :nth-child(3){
+         color:grey;
+         margin-left: 15px;
+     }
+     #view-all{
+         margin-left: 1000px;
+         color: rgb(109, 107, 107);
+         margin-top: -20px;
+         font-size: 13px;
+     }
+     #health{
+         margin-left: 280px;
+         margin-top: 100px;
+     }
+     #pp{
+        margin-left: 280px;
+        margin-top: -10px;
+        font-size: 14px;
+        color:grey;
+        margin-bottom: 30px;
+     }
+     /* #view-all-2{
+         color:red;
+         margin-left: 1200px;
+         font-size: 10px;
+        margin-bottom: 100px;
+     } */
+     #container-4{
+         height: 350px;
+         width: 1000px;
+         margin: auto;
+         display: flex;
+        
+     }
+     #c4-1{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c4-2{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c4-3{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c4-4{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c4-1 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c4-1 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c4-1 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c4-1 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c4-1 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c4-2 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c4-2 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c4-2 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c4-2 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c4-2 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c4-3 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c4-3 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c4-3 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c4-3 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c4-3 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c4-4 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c4-4 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c4-4 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c4-4 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c4-4 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #in-season{
+         margin-left: 280px;
+         margin-top: 100px;
+     }
+     #pp-2{
+        margin-left: 280px;
+        margin-top: -10px;
+        font-size: 14px;
+        color:grey;
+        margin-bottom: 30px;
+     }
+     #container-5{
+         height: 350px;
+         width: 1000px;
+         margin: auto;
+         display: flex;
+        
+     }
+     #c5-1{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c5-2{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c5-3{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c5-4{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c5-1 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c5-1 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c5-1 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c5-1 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c5-1 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c5-2 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c5-2 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c5-2 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c5-2 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c5-2 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c5-3 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c5-3 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c5-3 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c5-3 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c5-3 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c5-4 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c5-4 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c5-4 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c5-4 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c5-4 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #s-s{
+         margin-left: 280px;
+         margin-top: 100px;
+     }
+     #pp-3{
+        margin-left: 280px;
+        margin-top: -10px;
+        font-size: 14px;
+        color:grey;
+        margin-bottom: 30px;
+     }
+     #container-6{
+         height: 350px;
+         width: 1000px;
+         margin: auto;
+         display: flex;
+        
+     }
+     #c6-1{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c6-2{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c6-3{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c6-4{
+         height: 100%;
+         width: 25%;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         margin-left: 20px;
+         padding-bottom: 10px;
+         border-radius: 5px;
+     }
+     #c6-1 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c6-1 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c6-1 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c6-1 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c6-1 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c6-2 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c6-2 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c6-2 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c6-2 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c6-2 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c6-3 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c6-3 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c6-3 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c6-3 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c6-3 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+     #c6-4 > :nth-child(2), :nth-child(3){
+         font-size: 18px;
+     }
+     #c6-4 > img{
+         width:100%;
+         border-radius: 10px;
+     }
+     #c6-4 > :nth-child(2){
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+    
+     #c6-4 > :nth-child(3){
+         margin-top: -10px;
+         margin-left: 15px;
+     }
+     #c6-4 > :nth-child(4){
+         margin-top: -10px;
+         margin-left: 15px;
+         color: grey;
+     }
+   
+
+    </style>
+</head>
+<body>
+   <p id="p1">Home > Health Library</p>
+   <h2 id="h2-1">Health Library</h2>
+   <div id="container">
+     <div class="c-boxes"><p>All</p></div>
+     <div class="c-boxes"><p>Ailments</p></div>
+     <div class="c-boxes"><p>Beauty & Fitness</p></div>
+     <div class="c-boxes"><p>Food</p></div>
+     <div class="c-boxes"><p>Wellness</p></div>
+     <div class="c-boxes"><p>In The News</p></div>
+     <div class="c-boxes"><p>Videos</p></div>
+      <input placeholder="Search posts here..."/>
+   </div>
+   <div id="container-2">
+       <div id="c-2-1"><img src="https://www.netmeds.com/images/cms/magefan_blog/main_image/1611741966_Peepal_mainslot_300.jpg"/>
+        <h2 class="c2-h2">Peepal Tree: Medicinal And</h2>
+        <h2 class="c2-h2">Therapeutic Benefits, Skin Care a..</h2>
+    <p>In India, Mother Nature is nothing less than a God. We hold trees, plants, animals and any living organism close to our hearts
+         and on many occasions, a lot of spiritual and religious significance is attributed to these natural wonders.   When i..</p>
+    </div>
+       <div id="c-2-2"><img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648637051_Prunes_thumb_200.jpg"/>
+    <h2 class="c2-h2">Prunes/Dried</h2>
+    <h2 class="c2-h2">Plums/Plum Juice...</h2>
+    <p>Prunes, the shrivelled, dry fruits that are often being touted as..</p>
+    </div>
+       <div id="c-2-3"><img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648637148_Natural-Remedies-200.jpg"/>
+    <h2 class="c2-h2">Got Tanned? Here's</h2>
+    <h2 class="c2-h2">Why It Ca..</h2>
+    <p>Sweltering summers are round the corner and it’s time to br..</p>
+    </div>
+       <div id="c-2-4"><img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648637283_Sensory_thumb_200.jpg"/>
+    <h2 class="c2-h2">Sensory Processing</h2>
+    <h2 class="c2-h2">Disorder: C..</h2>
+    <p>Sensory processing disorder is a neurological health condition af..</p>
+    </div>
+       <div id="c-2-5"><img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648535905_Areata_thumb_200.jpg"/>
+    <h2 class="c2-h2">What Is Alopecia</h2>
+    <h2 class="c2-h2">Areata? All Y..</h2>
+    <p>The Oscars 2022 held on Sunday, March 27, 2022, at the Dolby Thea..</p>
+    </div>
+       <div id="c-2-6">
+           <p>CATEGORIES</p>
+          <p class="c26-p">Ayurvedic & Home Remedies (593)</p>
+          <p class="c26-p">Disease & Disorder (1015)</p>
+          <p class="c26-p">Eye care (15)</p>
+          <p class="c26-p">Food & Nutrition (857)</p>
+          <p class="c26-p">Hair care (46)</p>
+          <p class="c26-p">Health Day (202)</p>
+          <p class="c26-p">Health News (606)</p>
+          <p class="c26-p">Mental Health (15)</p>
+          <p class="c26-p">Mind & Body (23)</p>
+          <p class="c26-p">Personal Care (460)</p>
+          <hr/>
+          <p>ARCHIVES</p>
+          <p class="c26-p">2022</p>
+          <p class="c26-p">2021</p>
+          <p class="c26-p">2020</p>
+          <p class="c26-p">2019</p>
+          <p class="c26-p">2018</p>
+          <p class="c26-p">2017</p>
+          <p class="c26-p">2016</p>
+       </div>
+   </div>
+        <p id="mtmo">MAKE THE MOST OF</p>
+        <h2 id="nv">Netmeds Videos</h2>
+        <p id="mtmo2">Look and learn. Binge-watch these amazing health hacks, get useful information on new and trending topics</p>
+        <div id="container-3">
+            <div id="c3-1">
+                <img src="./images/image-1.png"/>
+                <h2>5 Amazing Health Benefits Of Shirodhara</h2>
+                <p>Shirodhara is considered to be one of the most rejuvenating Ayurvedic treatments. This relaxing scal..</p>
+            </div>
+            <div id="c3-2">
+                <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648537980_Longan_480.jpg"/>
+                <h2>6 Amazing Benefits Of Longan Fruit..</h2>
+                <p>The wealth of nutrients in longan fruit include vitamin C, the B complex vitamin..</p>
+            </div>
+            <div id="c3-3">
+                <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648459815_Vitamin_480.jpg"/>
+                <h2>5 Foods Rich In Vitamin K #Shorts..</h2>
+                <p>Vitamin K plays a crucial role in the blood clotting process. It is required to ..</p>
+            </div>
+       </div>
+  <p id="view-all">VIEW ALL</p>
+  <!-- <p id="view-all-2">VIEW ALL</p> -->
+  <h2 id="health">HEALTH</h2>
+  <p id="pp">A round-up of all the health news you can use, stay updated on new treatment, medical research, and wellness</p>
+  <div id="container-4">
+      <div id="c4-1">
+          <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1647950794_Stealth_thumb_200.jpg"/>
+          <h2>COVID-19:</h2>
+          <h2>Understanding Facts </h2>
+          <p>Just as the global population was heaving a huge sigh of relief that the COVID-1..</p>
+      </div>
+      <div id="c4-2">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1647594729_Syndrome_thumb_200.jpg"/>
+        <h2>World Down Syndrome</h2>
+        <h2>Day: 5 Simple T.. </h2>
+        <p>World Down Syndrome Day is observed annually on March 21, to raise awareness amo..</p>
+      </div>
+      <div id="c4-3">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1646635763_Women_thumb_200.jpg"/>
+        <h2>International Women’s</h2>
+        <h2>Day 2022: M..</h2>
+        <p>Women's health is her Capital’ - the saying is quite true as it is extreme..</p>
+      </div>
+      <div id="c4-4">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1646381199_Glaucoma_thumb_200.jpg"/>
+        <h2>World Glaucoma Week</h2>
+        <h2>2022: Watch Out..</h2>
+        <p>World Glaucoma Week is being observed from March 6 – 12, this year is aime..</p>
+      </div>
+
+  </div>
+
+  <h2 id="in-season">IN SEASON</h2>
+  <p id="pp-2">The way to your health is through your stomach with our delicious recipes and diet tips and health benefits of seasonal produce</p>
+  <div id="container-5">
+      <div id="c5-1">
+          <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1615194700_Toor-Dal_200x200.jpg"/>
+          <h2>Toor Dal/ Pigeon Pea:</h2>
+          <h2>Health Benefi..</h2>
+          <p>Pulses or legumes are an integral part of Indian cooking, which forms a key com..</p>
+      </div>
+      <div id="c5-2">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648714231_Padwa_thumb_200.jpg"/>
+        <h2>Ugadi/Gudi Padwa/Cheti</h2>
+        <h2>Chand 2022:..</h2>
+        <p>Today is the first day of Hindu lunar calendar and it is being celebrated as New..</p>
+      </div>
+      <div id="c5-3">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648637051_Prunes_thumb_200.jpg"/>
+        <h2>Prunes/Dried Plums/Plum</h2>
+        <h2>Juice: Nutr..</h2>
+        <p>Prunes, the shrivelled, dry fruits that are often being touted as the new superf..</p>
+      </div>
+      <div id="c5-4">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1648458804_Gluten_thumb_200.jpg"/>
+        <h2>Gluten-Free Diet A</h2>
+        <h2>Beginner’s Gui..</h2>
+        <p>A gluten-free diet is a diet pattern that excludes certain foods containing the..</p>
+      </div>
+
+  </div>
+
+  <h2 id="s-s">IN SEASON</h2>
+  <p id="pp-3">The way to your health is through your stomach with our delicious recipes and diet tips and health benefits of seasonal produce</p>
+  <div id="container-6">
+      <div id="c6-1">
+          <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1642759977_Vishal_thumb_200.jpg"/>
+          <h2>Passive Smoking Is An</h2>
+          <h2>Active and Ac..</h2>
+          <p>Second-hand smoking or passive smoking is the inhalation of a combined smoke fro..</p>
+      </div>
+      <div id="c6-2">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1617784418_Banu_thumb_200.jpg"/>
+        <h2>Breast Cancer? Don’t</h2>
+        <h2>Panic, Seek ..</h2>
+        <p>Over the years, breast cancer has become the nemesis of Indian women overtaking..</p>
+      </div>
+      <div id="c6-3">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1615538948_Kaladevi_thumb_200.jpg"/>
+        <h2>Glaucoma May Cause</h2>
+        <h2>Vision Loss. Get..</h2>
+        <p>India can easily be the world’s capital of glaucoma, a group of eye disord..</p>
+      </div>
+      <div id="c6-4">
+        <img src="https://www.netmeds.com/images/cms/magefan_blog/popular/1614668194_Dr_Pushkala_200.jpg"/>
+        <h2>Can Watching Gadgets</h2>
+        <h2>Affect Eating..</h2>
+        <p>Human beings possess an innate preference for sweet, high fat and salty foods an..</p>
+      </div>
+  </div>
+</body>
+</html>
