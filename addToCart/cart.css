@@ -209,33 +209,35 @@ padding-bottom: 50px;
 }
 .box-card{
     width: 65%;
-    height: 400px;
+    height: 650px;
     background-color: white;
     border-radius: 10px;
     font-family: 'Lato',sans-serif;
     letter-spacing: 1px;
-    padding-left: 10px;
+    padding-left: 30px;
     color: #848796;
     margin: auto;
 }
 .card-details{
     color: #31b3b6;
     font-weight: 600;
+    font-size: 20px;
 }
 .card-input{
     border: none;
     border-bottom: 1px solid #848796;
     font-size: 20px;
+    margin-left: -5px;
 }
 .pay-button{
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px 70px;
     font-family: 'Lato',sans-serif;
     color: white;
     background-color: #31b3b6;
     border: none;
     font-size: 20px;
-    margin-left: 40%;
+    margin-left: 9%;
 }
 
 
