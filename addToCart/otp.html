@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <style>
+        body{
+            background-color: #f6f6f7;
+        }
+        form{
+            margin-top: 20%;
+            text-align: center;
+            width: 30%;
+            height: 200px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: white;
+            padding: 20px;
+            margin-left: 30%;
+        }
+        form>input{
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        #password{
+            text-align: center;
+            background-color: #f6f6f7 ;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        #otp{
+            border: none;
+            background-color: #24aeb1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="text" placeholder="Enter  4 digit OTP" id="password">
+        <br>
+        <input type="submit" value="Enter OTP" id="otp" >
+
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",otpFunc)
+
+    function otpFunc(){
+        event.preventDefault()
+        var otp = 1234
+
+        var otpNo = document.querySelector("#password").value 
+
+        if(otpNo == otp){
+            alert("Payment Successful")
+            window.location.href = "wellness.html"
+        }
+        else{
+            alert("Enter Correct OTP")
+        }
+    }
+</script>

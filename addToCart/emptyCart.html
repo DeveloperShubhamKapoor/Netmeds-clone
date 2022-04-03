@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/addToCart/cart.css">
+    <title>Empty Cart</title>
+</head>
+<body>
+    <div>
+        <h3 class="my-cart">My Cart</h3>
+    </div>
+    <div>
+        <img class="image-cart" src="https://www.netmeds.com/msassets/images/emptycart.svg" alt="">
+    </div>
+    <div>
+        <h4 id="empty-cart">Your Cart is empty!</h4>
+    </div>
+    <div>
+        <p id="text">You have no items added in the cart.
+            Explore and add products you like!</p>
+    </div>
+    <div>
+        <button id="button"><a href="wellness.html">ADD PRODUCTS</a></button>
+    </div>
+</body>
+</html>
+<script >
+    var userCart = JSON.parse(localStorage.getItem("cartData")) || []
+
+    if(userCart.length != 0){
+        window.location.href = "cart.html"
+        window.location.load()
+    }
+</script>

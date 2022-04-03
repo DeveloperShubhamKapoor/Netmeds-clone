@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/addToCart/cart.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="payment-details">
+        <h3>Payment Details</h3>
+    </div>
+    <div class="payment-page">
+        <div class="box-card">
+            <p>ENTER DEBIT CREDIT CARD DETAILS</p>
+            <form action="">
+                <div class="card-details">
+                    <p>Card Number</p>
+                    <input class="card-input" id="card-number" type="text">
+                    <div>
+                        <div>
+                            <p>Expiry Date</p>
+                            <input class="card-input" id="month" type="text" placeholder="MM">
+                            <input class="card-input" id="year" type="text" placeholder="YY">
+                        </div>
+                        <div>
+                            <p>cvv</p>
+                            <input class="card-input" id="cvv" type="text">
+                        </div>
+                        <p>Name on Card</p>
+                        <input class="card-input" id="name" type="text">
+                        <div><input type="submit" class="pay-button" value="PAY"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+   
+
+document.querySelector("form").addEventListener("submit",paidFunc)
+
+var cardDetails = {
+    cardNum:"123456789",
+    cardmonth: "12",
+    cardyear: "2022",
+    cardcvv: "123",
+  }; 
+
+function paidFunc(){
+    event.preventDefault()
+    console.log("inside function")
+  var number  = document.querySelector("#card-number").value
+
+  var month =   document.querySelector("#month").value
+
+  var year = document.querySelector("#year").value
+
+  var cvv = document.querySelector("#cvv").value
+
+  var name = document.querySelector("#name").value
+
+  if(number == cardDetails.cardNum && month == cardDetails.cardmonth && year == cardDetails.cardyear && cvv == cardDetails.cardcvv){
+      window.location.href = "otp.html"
+  }
+  else{
+      alert("Enter Correct Credentials")
+  }
+    
+    
+}
+</script>
