@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signin.css" />
+    <title>signin page</title>
+    <style>
+   /*signin css file by yogendra*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+#container {
+  height: 528px;
+  width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 89%;
+  width: 82%;
+  margin: auto;
+  box-sizing: border-box;
+}
+#img {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  color: #151b39;
+  margin: 0px 0px 8px;
+}
+p {
+  font-family: "Lato", sans-serif;
+  color: #151b3999;
+  font-size: 12px;
+  margin: 0px 0px 35px;
+}
+label {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #1a9ea0;
+}
+#Email {
+  height: 32px;
+  width: 75%;
+  border: 0px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  border-bottom: 2px solid rgba(21, 27, 57, 0.04);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(21, 27, 57, 0.04);
+}
+
+#First {
+  height: 32px;
+  width: 75%;
+  border: 0px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  border-bottom: 2px solid rgba(21, 27, 57, 0.04);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(21, 27, 57, 0.04);
+}
+
+#Last {
+  height: 32px;
+  width: 75%;
+  border: 0px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  border-bottom: 2px solid rgba(21, 27, 57, 0.04);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(21, 27, 57, 0.04);
+}
+
+#btn {
+  background: #24aeb1;
+  font-family: LatoBold;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  padding: 15px 6px;
+  width: 80%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  cursor: pointer;
+  margin-left: -1px;
+}
+#red {
+  color: rgb(241, 24, 24);
+  font-style: italic;
+}
+#gf {
+  height: 40px;
+  width: 80%;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.a {
+  height: 95%;
+  width: 90%;
+  margin: auto;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#image {
+  height: 20px;
+  width: 20p;
+}
+.a > div {
+  padding: 10px;
+  margin-left: 20px;
+}
+#but {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: #b4bbc7;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  border: 0.5px solid rgb(204, 195, 195);
+}
+#otpverify {
+  display: flex;
+  width: 80%;
+  height: 40px;
+
+  margin-bottom: 2%;
+  background-color: #fcf8f8;
+}
+
+#otpverify > div {
+  width: 60%;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 1%;
+  text-align: center;
+  margin-right: 5%;
+  background: color #f7f7f7;
+  padding: 10px 15px 10px 15px;
+  box-sizing: border-box;
+}
+#image {
+  height: 17px;
+  width: 17px;
+  margin-right: 40px;
+}
+#terms {
+  margin: auto;
+  width: 20%;
+  font-size: 12px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+}
+#otpsent {
+  color: #afabab;
+  font-size: 12px;
+}
+#VerifyNum {
+  color: #737688;
+  font-size: 13px;
+}
+
+#aa {
+  color: #b4bbc7;
+}
+#bb {
+  color: #f04290;
+}
+#cc {
+  color: #b4bbc7;
+}
+#dd {
+  color: #f04290;
+}
+.modelcontainer {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 200px;
+  width: 100vh;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  margin-top: 20%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 25px;
+}
+.modelcontainer.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+.modelcontainer > .model-container {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 15px;
+  padding: 15px 20px 15px 20px;
+  width: 600px;
+}
+#btn2 {
+  height: 600%;
+  width: 30%;
+  background-color: rgb(42, 123, 173);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  border: 0.5px solid rgb(204, 195, 195);
+  margin-right: 15%;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 65%;
+}
+
+.model-container > h1 {
+  font-family: "Lato", sans-serif;
+}
+.model-container > p {
+  font-family: "Lato", sans-serif;
+}
+.model-container > #close {
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+}
+.change {
+  color: #f17ba2;
+  margin-left: 62px;
+}
+.change_otp {
+  color: #f17ba2;
+  margin-left: 300px;
+  font-size: 12px;
+  margin-bottom: 1%;
+}
+    </style>
+  </head>
+  <body>
+    <!--signin.html file by yogendra-->
+    <div id="container">
+      <div class="box">
+        <img
+          id="img"
+          src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <h1>Create Account</h1>
+
+        <form id="VerifyMe">
+          <label>Email Id</label>
+          <br />
+          <div>
+            <input
+              type="text"
+              name=""
+              id="Email"
+              placeholder="Enter your Email Id"
+            />
+          </div>
+
+          <label>First Name</label>
+          <br />
+          <div>
+            <input
+              type="text"
+              name=""
+              id="First"
+              placeholder="Your First Name"
+            />
+          </div>
+
+          <label>Last Name</label>
+          <br />
+          <div>
+            <input id="Last" type="text" name="" placeholder="Your Last Name" />
+          </div><br>
+          <h3 id="VerifyNum">VERIFYING NUMBER </h3>
+          <p id="otpsent">We have sent 6 digit OTP on <span style="color: black;" >+91-9876543210</span> <span class="change">Change</span></p>
+          <div id="otpverify">
+            <div> <b>2</b> </div>
+            <div><b>4</b> </div>
+            <div><b>6</b></div>
+            <div><b>3</b></div>
+            <div><b>1</b></div>
+            <div><b>6</b></div> 
+          </div>
+          <p class="change_otp" >Resend OTP</p>
+         
+          <button id="btn" type="submit">VERIFY</button>
+        </form>
+        <div id="gf"></div>
+      </div>
+    </div>
+    <div id="nil" class="modelcontainer">
+     <div class="model-container1">
+       <h1>Sign In Successful  <span>&#x2705;</i></span></h1>
+       <p>You Have Successfully logged into The Netmed.com </p>
+       <button id="btn2" onclick="removeClass()">OK</button>
+     </div>
+    </div>
+    
+    <div id="terms">
+      <span id="aa">By continuing you agree to our </span
+      ><span id="bb">Terms of service </span><span id="cc"> and </span
+      ><span id="dd"> Privacy & Legal Policy.</span>
+    </div>
+    <script>
+      /*signin.js file by ypgendra */
+
+alert("246316 is Your One-Time Password")
+document.querySelector("#VerifyMe").addEventListener("submit", myfunction);
+
+var verifyArr = JSON.parse(localStorage.getItem("verifyMe")) || [];
+
+function myfunction() {
+event.preventDefault();
+var verifyObj = {
+Email: document.querySelector("#Email").value,
+
+first: document.querySelector("#First").value,
+last: document.querySelector("#Last").value,
+};
+
+verifyArr.push(verifyObj);
+localStorage.setItem("verifyMe", JSON.stringify(verifyArr));
+
+var elem=document.getElementById("nil")
+elem.classList.add("show")
+
+}
+function removeClass(){
+ 
+var elem=document.getElementById("nil")
+elem.classList.remove("show")
+window.location.href="newpage.html"
+
+}
+</script>
+    
+  </body>
+</html>

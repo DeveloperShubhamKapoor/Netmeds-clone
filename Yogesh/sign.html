@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Netmeds.signin</title>
+    <style>
+/*sign.css file by yogendra*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');  
+#container{
+    height: 528px;
+    width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 89%;
+    width: 82%;
+    margin: auto;
+    box-sizing: border-box;
+}
+#img{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #151b39;
+    margin: 0px 0px 8px;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    color: #151b3999;
+    font-size: 12px;
+    margin: 0px 0px 35px;
+}
+label{
+    color: #24aeb1;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+}
+#mobile{
+    height: 32px;
+    width: 75%;
+    border: 0px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color:black;
+        border-bottom: 2px solid rgba(21,27,57,.04);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(21, 27, 57, 0.04);
+}
+#mob{
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    padding: 0px 5px 0px 0px;
+    gap: 10px;
+    color: rgb(32, 31, 31);
+}
+#btn{
+
+    background: #24aeb1;
+    font-family: LatoBold;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    padding: 15px 6px;
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    cursor: pointer;
+    margin-left: -1px;
+}
+#red{
+    color: rgb(241, 24, 24);
+    font-style: italic;
+}
+#gf{
+    height: 40px;
+    width: 80%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.a{
+
+    height: 95%;
+    width: 90%;
+    margin: auto;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#image{
+    height: 20px;
+    width: 20p;
+}
+.a>div{
+    padding: 10px;
+    margin-left: 20px;
+}
+#but{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: #b4bbc7;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    border: 0.5px solid rgb(204, 195, 195);
+}
+#image{
+    height: 17px;
+    width: 17px;
+    margin-right: 40px;
+}
+#terms{
+    margin: auto;
+    width: 20%;
+    font-size: 12px;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+#aa{
+    color: #b4bbc7;
+}
+#bb{
+    color: #f04290;
+}
+#cc{
+    color: #b4bbc7;
+
+}
+#dd{
+    color: #f04290;
+
+}
+
+    </style>
+</head>
+<body>
+    <!--signin html file start here by yogendra-->
+    <div id="container">
+        <div class="box">
+            <img id="img" src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="">
+        </div>
+        <div class="box">
+            <h1>Sign In / sign Up</h1>
+            <p> Sign up or Sign in to access your orders, special offers, health tips and more!</p>
+            <form>
+                <label>PHONE NUMBER</label>
+                <br>
+                <div id="mob"><span>+91</span><input type="number" name="" id="mobile" placeholder="Enter your mobile no"></div>
+                <p id="red">Please enter your Mobile Number!</p>
+               <button id="btn" type="submit">USE OTP</button>
+
+            </form>
+            <div id="gf">
+                <div class="a">
+                   <a id="main" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.netmeds.com%3Fid%3Dauth457854&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=905254089953-5ic7vnj7q2kfq7i5iebiplov3gdbbp26.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.netmeds.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow">
+                       <button id="but"><span><img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt=""></span></span>Google<span></button>
+                   </a>
+
+                </div>
+                <div class="a">
+                    <a id="main" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=913570111998746&kid_directed_site=0&app_id=913570111998746&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv4.0%2Fdialog%2Foauth%3Fapp_id%3D913570111998746%26cbt%3D1648633106584%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df106718dce2616c%2526domain%253Dwww.netmeds.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.netmeds.com%25252Ff8f473af17a2e8%2526relation%253Dopener%26client_id%3D913570111998746%26display%3Dpopup%26domain%3Dwww.netmeds.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.netmeds.com%252Fcustomer%252Faccount%252Flogin%26locale%3Den_US%26logger_id%3Df1891b66b601d38%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df3412612efa6f44%2526domain%253Dwww.netmeds.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.netmeds.com%25252Ff8f473af17a2e8%2526relation%253Dopener%2526frame%253Df16df5f3f63235c%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%252Cpublic_profile%26sdk%3Djoey%26version%3Dv4.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3412612efa6f44%26domain%3Dwww.netmeds.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.netmeds.com%252Ff8f473af17a2e8%26relation%3Dopener%26frame%3Df16df5f3f63235c%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0">
+                        <button id="but"><span><img id="image" src="https://th.bing.com/th/id/R.95c864f039d6bf19cb79558130241037?rik=qyy%2fTxQP4fSJYw&riu=http%3a%2f%2fsguru.org%2fwp-content%2fuploads%2f2018%2f02%2ffacebook-logo-jpg-facebook-logo-1.jpg&ehk=8lVFAuL735kYvaMfWvwOy%2bTsHSB4nsA4%2bxGF7VYYVro%3d&risl=&pid=ImgRaw&r=0" alt=""></span></span>Facebook<span></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="terms"><span id="aa">By continuing you agree to our </span><span id="bb">Terms of service </span><span id="cc"> and  </span><span id="dd"> Privacy & Legal Policy.</span></div>
+<script>
+   /*signin.js file by yogendra*/
+
+document.querySelector("form").addEventListener("submit", myfunction);
+  
+  signArr = [];
+  function myfunction() {
+    event.preventDefault();
+  
+    window.location.href = "signin.html";
+  }
+  </script>
+</body>
+</html>
