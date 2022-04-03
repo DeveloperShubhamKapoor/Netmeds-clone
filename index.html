@@ -1,12 +1,1874 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Homepage</title>
-  </head>
-  <body>
-    <h1>Homepage</h1>
-  </body>
+    <style>
+        .main-container {
+            width: 100.4%;
+            height: 5050px;
+            /* border: 1px solid red; */
+            background-color: #f3f7fb;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 160px;
+            /* border: 1px solid rgb(247, 13, 52); */
+            justify-content: center;
+            text-align: center;
+            background-color: #32AEB1;
+            margin-top: -16.5px;
+
+
+        }
+
+        .child-div {
+            width: 95%;
+            height: 75px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 8px;
+            display: flex;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        input {
+            height: 45px;
+            width: 78%;
+            /* border: 1px solid rgb(168, 13, 39); */
+            margin-left: 69px;
+            padding: 0px 64px 0px 12px;
+            box-sizing: border-box;
+            margin-top: 2px;
+            border: none;
+            background-color: transparent;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .info {
+            display: flex;
+            width: 30%;
+            height: 55px;
+            /* border: 1px solid green; */
+            justify-content: space-around;
+            margin-top: 15px;
+            font-size: 16px;
+            margin-left: 12px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .under-child {
+            width: 80%;
+            height: 75px;
+            /* border: 1px solid rgb(103, 181, 233); */
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            font-size: 16px;
+            letter-spacing: normal;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .img-med {
+            height: 40px;
+        }
+
+        .unde-third-child {
+            display: flex;
+            height: 60px;
+            width: 15%;
+            /* border: 1px solid blueviolet; */
+            margin: auto;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .para {
+            margin-left: 10px;
+            color: #FFFFFFCC;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .search-bar {
+            width: 55%;
+            height: 50px;
+            /* border: 1px solid rgb(247, 13, 52); */
+            margin-left: 20px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            display: flex;
+            background-color: white;
+            border-radius: 8px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .del {
+            font-size: 14px;
+            margin-top: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .img-logo {
+            margin-left: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .below-nav {
+            width: 75%;
+            height: 40px;
+            /* border: 1px solid rgb(207, 5, 106); */
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Lato', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #151b39;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .advertising {
+            width: 98%;
+            height: 310px;
+            border: 1px solid white;
+            margin: auto;
+            margin-top: 15px;
+            background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1648563157_Web_Home_title_otc.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 310px;
+            cursor: pointer;
+
+        }
+
+        .adv-arrow {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            margin-top: 139px;
+
+        }
+
+        .discount-main-div {
+            width: 96%;
+            height: 97px;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .discount {
+            width: 32%;
+            height: 90px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            box-sizing: border-box;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .cat-img {
+            height: 56px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .cat-list {
+            line-height: 5px;
+            margin-left: 20px;
+            /* border: 1px solid green; */
+            width: 45%;
+            height: 60px;
+            margin-top: 18px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+        .cat-arrow {
+            transform: rotate(270deg);
+            margin-left: 113px;
+            /* border: 1px solid green; */
+            width: 10px;
+            height: 18px;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+
+        .save {
+            color: #5BA41C;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .payment-partner-div {
+            width: 100%;
+            height: 160px;
+            /* border: 1px solid purple; */
+            margin-top: 10px;
+        }
+
+        .partner-head {
+            width: 95%;
+            height: 40px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin: auto;
+        }
+
+        .part-offer {
+            color: #0B1219;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .view {
+            color: #EF4281;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .cashback {
+            width: 96%;
+            height: 100px;
+            /* border: 1px solid rgb(53, 11, 53); */
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+
+        }
+
+        .max {
+            width: 32%;
+            height: 82px;
+            /* border: 1px solid green; */
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: white;
+
+        }
+
+        .assured {
+            width: 85%;
+            height: 80px;
+            /* border: 1px solid green; */
+            font-size: 13px;
+            margin-left: 17px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .max-img {
+            height: 40px;
+            margin-top: 22px;
+            margin-left: 10px;
+        }
+
+        .parag {
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+           
+        }
+
+        .previous {
+            width: 95%;
+            height: 140px;
+            /* border: 1px solid green; */
+            margin: auto;
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .pre-child {
+            width: 50%;
+            height: 135px;
+            /* border: 1px solid pink; */
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+
+        }
+
+        .para-child {
+            color: #0B1219B3;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .view-order {
+            color: #24AEB1;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .explore {
+            width: 140px;
+            height: 33px;
+            background-color: #24AEB1;
+            color: white;
+            border-radius: 6px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: none;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .trending-main {
+            height: 300px;
+            width: 95%;
+            /* border: 1px solid darkblue; */
+            margin: auto;
+
+        }
+
+        .trending-container {
+            height: 233px;
+            width: 100%;
+            /* border: 1px solid rgb(0, 139, 86); */
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        .trending {
+            width: 32%;
+            height: 230px;
+            /* border: 1px solid rgb(17, 104, 218); */
+            background-image: url("https://www.netmeds.com/images/cms/aw_rbslider/slides/1634972793_Netmeds-masks_Mini_Banner__Web.jpg");
+            border-radius: 10px;
+
+
+        }
+
+        .trending-arrow-back {
+            margin-top: 90px;
+            margin-left: -25px;
+        }
+
+        .trending-arrow-for {
+            margin-left: 390px;
+            margin-top: 90px;
+        }
+
+        .shop-cat {
+            width: 95%;
+            height: 755px;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+
+        .shop-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .view-all {
+            margin-top: 30px;
+            color: #EF4281;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .product-cat-container {
+            width: 100%;
+            height: 280px;
+            /* border: 1px solid green; */
+
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .product-cat-container-two {
+            width: 100%;
+            height: 330px;
+            /* border: 1px solid green; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .product-cat {
+            width: 18%;
+            height: 280px;
+            /* border: 1px solid crimson; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .product-cat-two {
+            width: 18%;
+            height: 320px;
+            /* border: 1px solid crimson; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .covid-pack {
+            height: 220px;
+            padding: 0%;
+
+        }
+
+        .covid-info {
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #0b1219;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .product-discount {
+            margin-top: 33px;
+            text-align: center;
+            font-size: 16px;
+            color: #5BA41C;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .Netmeds {
+            width: 100%;
+            height: 155px;
+            /* border: 1px solid rgb(29, 32, 163); */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .star-Membership {
+            width: 37%;
+            height: 150px;
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .star {
+            margin-top: 44px;
+            margin-left: 9px;
+        }
+
+        .Membership {
+            margin-left: -40px;
+        }
+
+        .special-discounts {
+            line-height: 30px;
+            color: #0B1219BF;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .charging {
+            width: 25%;
+            height: 150px;
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Starting {
+            display: flex;
+            width: 45%;
+            height: 35px;
+            /* border: 1px solid green; */
+            margin-top: 55px;
+            justify-content: space-between;
+        }
+
+        .Explore-Plans {
+            width: 123px;
+            height: 44px;
+            /* margin-left: 110px; */
+            background-color: #24AEB1;
+            color: white;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            font-size: 14px;
+            border: transparent;
+            margin-top: 50px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .charge-icon {
+            margin-top: 16px;
+        }
+
+        .horizontala {
+            margin-top: 25px;
+        }
+
+        .product-cat-container-focus {
+            width: 100%;
+            height: 330px;
+            /* border: 1px solid green; */
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .facial-kits-main {
+            width: 105.2%;
+            height: 200px;
+            border: 1px solid white;
+            margin-left: -32px;
+            margin-top: 20px;
+            background-color: #e83e8c;
+        }
+
+        .shop-head-beauty {
+            display: flex;
+            justify-content: space-between;
+            width: 95.3%;
+            height: 20px;
+            margin: auto;
+
+        }
+
+        .facial-kits-child {
+            width: 95.3%;
+            height: 290px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .beauty-products {
+            width: 18%;
+            height: 287px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* border: 1px solid red; */
+            background-image: url("https://www.netmeds.com/images/category/3505/thumb/facial_kits_0.jpg");
+            background-size: 230px 200px;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position: top;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+
+        .beauty-arrow-back {
+            margin-top: 120px;
+            margin-left: -20px;
+        }
+
+        .beauty-arrow-for {
+            margin-left: 210px;
+            margin-top: 120px;
+        }
+
+        .para-facial {
+            text-align: center;
+            margin-top: 90px;
+            font-size: 20px;
+            color: #0B1219;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .para-facial-three {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 20px;
+            color: #0B1219;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .beauty-products-same-div {
+            width: 18%;
+            height: 287px;
+            /* border: 1px solid crimson; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .care-lip {
+            height: 200px;
+            width: 230px;
+            border-radius: 10px;
+        }
+
+        .para-facial-care {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .part-offer-beauty {
+            color: white;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .view-all-beauty {
+            color: white;
+            margin-top: 25px;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .facial-kits-main-best {
+            width: 105.2%;
+            height: 200px;
+            /* border: 1px solid black; */
+            margin-left: -35px;
+            margin-top: 200px;
+            background-color: #6c757d;
+        }
+
+        .personal-care {
+            width: 100.3%;
+            /* height: 755px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 170px;
+            margin-left: -5px;
+        }
+
+        .health-concern {
+            width: 100%;
+            height: 350px;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+
+        .health-pack {
+            height: 100px;
+            margin-left: 61px;
+            margin-top: 50px;
+
+        }
+
+        .health-info {
+            font-size: 18px;
+            color: #0b1219;
+            text-align: center;
+            margin-top: 60px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .health-expert-product {
+            width: 24%;
+            height: 200px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* border: 1px solid red; */
+            background-image: url("https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648637051_Prunes_features_480.jpg");
+            background-size: 350px 120px;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position: top;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+
+        .facial-kits-main-health {
+            width: 105%;
+            height: 150px;
+            border: 1px solid black;
+            margin-left: -30px;
+            margin-top: 20px;
+            background-color: #e83e8c;
+        }
+
+        .health-expert-for {
+            margin-left: 290px;
+            margin-top: 90px;
+        }
+
+        .para-health-expert {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            /* margin-left: 10px; */
+
+
+        }
+
+        .beauty-products-same-div-health-expert {
+            width: 25%;
+            height: 199px;
+            /* border: 1px solid crimson; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .advice-from-health-expert-img {
+            height: 120px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .same-para-facial-care {
+            /* text-align: center; */
+            margin-top: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .facial-kits-child-health {
+            width: 95.3%;
+            height: 205px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .beauty-arrow-back-health {
+            margin-top: 90px;
+            margin-left: -20px;
+        }
+
+        .out {
+            min-height: 219px;
+            width: 100%;
+            background-color: #f3f7fb;
+            margin: 0 -16px 6px;
+            position: relative;
+            margin-top: 150px;
+            margin-left: 2px;
+
+        }
+
+        .in {
+
+            min-height: 219px;
+            width: 95%;
+
+        }
+
+        .start {
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            color: #727a7e;
+        }
+
+        .end {
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            color: #727a7e;
+            cursor: pointer;
+            line-height: 1.3rem;
+
+        }
+
+        .in h1 {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            margin: 0px 0px 8px;
+            padding: 4px 0px;
+        }
+
+        .in p,
+        .list {
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            color: #727a7e;
+            margin: 0px 0px 8px;
+            line-height: 1.3rem;
+        }
+
+        #foot {
+            width: 100%;
+            height: 800px;
+            background-color: white;
+            margin-top: 80px;
+        }
+
+        .netmeds-desc {
+            display: flex;
+            justify-content: space-around;
+            margin-top: -30px;
+        }
+
+        .netmeds-font {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            text-align: left;
+            line-height: 30px;
+            margin-left: 130px;
+            margin-right: 270px;
+            margin-top: -15px;
+            color: #8593b5;
+            font-weight: 500;
+        }
+
+        .about-company {
+            display: flex;
+            gap: 25px;
+            padding-top: 35px;
+            padding-left: 10px;
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            justify-content: space-between;
+            width: 60%;
+
+
+        }
+
+        .about-company li:nth-child(1) {
+            font-weight: 600;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .subscribe-class {
+            padding-top: 55px;
+            padding-left: 90px;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            width: 20%;
+            margin-left: 190px;
+
+        }
+
+        .subscribe-class p:nth-child(1) {
+            font-weight: 600;
+        }
+
+        #email {
+            border: none;
+            border-bottom: 1px solid rgba(11, 18, 25, .2);
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+
+        #button {
+            border: none;
+            font-size: 15px;
+            background-color: #84be52;
+            border-radius: 5px;
+        }
+
+        .play-store {
+            width: 130px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .foot-bottom {
+            display: flex;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            justify-content: space-between;
+            color: #85889b;
+            padding: 0px 40px;
+            font-weight: 500;
+        }
+
+        .foot-bottom p:nth-child(1) {
+            cursor: pointer;
+        }
+
+        .foot-bottom p:nth-child(2) {
+            cursor: pointer;
+        }
+
+        .foot-bottom p:nth-child(3) {
+            cursor: pointer;
+        }
+
+        .foot-bottom p:nth-child(4) {
+            cursor: pointer;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #24aeb1;
+            font-size: 13px;
+        }
+
+        #non {
+            font-size: 12px;
+        }
+
+        #aq {
+            color: #b3b5b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="child-div">
+                <div>
+                    <img class="img-logo" src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"
+                        alt="">
+                </div>
+                <div class="search-bar">
+                    <p class="del">Deliver to </p>
+                    <input type="text" placeholder="Search for Medicine & Wellness products...">
+                </div>
+                <div class="info">
+                    <div>
+                        <p> <a style="color: white;" href="">Upload</a></p>
+                    </div>
+                    <div>
+                        <p> <a style="color: white;" href="">Cart</a></p>
+                    </div>
+                    <div>
+                        <p> <a style="color: white;" href=""> Sign in / Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="child-div">
+                <div class="under-child">
+                    <div class="unde-third-child">
+                        <a href=""><img class="img-med"
+                                src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/medicine.svg"
+                                alt=""></a>
+                        <p><a class="para" href="">Medicine</a></p>
+                    </div>
+                    <div class="unde-third-child">
+                        <a href=""><img class="img-med"
+                                src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt=""></a>
+                        <p><a class="para" href="">Wellness</a></p>
+                    </div>
+                    <div class="unde-third-child">
+                        <a href=""><img class="img-med"
+                                src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt=""></a>
+                        <p><a class="para" href="">Lab Tests</a></p>
+                    </div>
+                    <div class="unde-third-child">
+                        <a href=""> <img class="img-med"
+                                src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg" alt=""></a>
+                        <p><a class="para" href="">Beauty</a></p>
+                    </div>
+                    <div class="unde-third-child">
+                        <a href=""><img class="img-med"
+                                src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/health-library.svg"
+                                alt=""></a>
+                        <p><a class="para" href="">Health Corner</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="below-nav">
+
+            <p><a href="">COVID Essentials</a></p>
+            <p><a href="">Diabetes</a></p>
+            <p><a href="">Eyewear</a></p>
+            <p><a href="">Ayush</a></p>
+            <p><a href="">Fitness</a></p>
+            <p><a href="">Mom & Baby</a></p>
+            <p><a href="">Devices</a></p>
+            <p><a href="">Surgicals</a></p>
+            <p><a href="">Sexual Wellness</a></p>
+            <p><a href="">Treatments</a></p>
+
+        </div>
+
+        <div class="advertising">
+            <div class="adv-arrow">
+                <a href=""><img src="https://www.netmeds.com/assets/gloryweb/images/icons/prev.svg" alt="adv-arrow"></a>
+                <a href=""><img src="https://www.netmeds.com/assets/gloryweb/images/icons/next.svg" alt="adv-arrow"></a>
+            </div>
+        </div>
+
+        <div class="discount-main-div">
+            <div class="discount">
+                <a href=""><img class="cat-img"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg" alt=""></a>
+                <div class="cat-list">
+                    <h2>Order Medicine</h2>
+                    <p class="save">Save Upto 25% off</p>
+                </div>
+                <div class="cat-arrow">
+                    <img src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/expand_more.svg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="discount">
+                <a href=""><img class="cat-img" src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg"
+                        alt=""></a>
+                <div class="cat-list">
+                    <h2>Beauty</h2>
+                    <p class="save">Save Upto 25% off</p>
+                </div>
+                <div class="cat-arrow">
+                    <img src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/expand_more.svg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="discount">
+                <a href=""><img class="cat-img"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg" alt=""></a>
+                <div class="cat-list">
+                    <h2>Wellness</h2>
+                    <p class="save">Save Upto 25% off</p>
+                </div>
+                <div class="cat-arrow">
+                    <img src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/expand_more.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-partner-div">
+
+            <div class="partner-head">
+                <h2 class="part-offer">Payment Partner Offers</h2>
+                <p><a class="view" href="">View All ></a></p>
+            </div>
+
+            <div class="cashback">
+
+                <div class="max">
+                    <a href=""><img class="max-img"
+                            src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" alt=""></a>
+                    <div class="assured">
+                        <p class="parag">Get max Rs. 1000 assured Mobikwik cashback...</p>
+                        <p style="color: #a2a5b8;">Get"assured Mobikwik cashback" between max Rs.1000 and min Rs.150 on a minimum purchase of..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="max">
+                    <a href=""><img class="max-img"
+                            src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" alt=""></a>
+                    <div class="assured">
+                        <p class="parag">Get max Rs. 650 assured Mobikwik cashback...</p>
+                        <p style="color: #a2a5b8;">Get"assured Mobikwik cashback" between max Rs.1000 and min Rs.150 on a minimum purchase of AN
+                        </p>
+                    </div>
+                </div>
+
+                <div class="max">
+                    <a href=""><img class="max-img"
+                            src="https://www.netmeds.com/images/cms/offers/1643631754_1629112796_Simpl_Icon.png"
+                            alt=""></a>
+                    <div class="assured">
+                        <p class="parag">Get max Rs. 500 assured Mobikwik cashback...</p>
+                        <p style="color: #a2a5b8;">Get"assured Mobikwik cashback" between max Rs.1000 and min Rs.150 on a minimum purchase of..
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="previous-main">
+            <div class="previous">
+
+                <div class="pre-child">
+                    <div>
+                        <h2 class="part-offer">Previous Orders</h2>
+                        <p class="para-child">Your previously ordered products</p>
+                        <p><a class="view-order" href="">View Orders ></a></p>
+                    </div>
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/previous_orders.svg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="pre-child">
+                    <div>
+                        <h2 class="part-offer">Beauty Products</h2>
+                        <p class="view-order">Save Upto 40% off</p>
+                        <button class="explore">Explore Beauty</button>
+                    </div>
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="trending-main">
+
+            <h2 class="part-offer">Trending Today</h2>
+            <div class="trending-container">
+
+                <div class="trending">
+                    <a href=""><img class="trending-arrow-back"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_prev.svg"
+                            alt=""></a>
+                </div>
+
+                <div class="trending"></div>
+
+                <div class="trending">
+                    <a href=""><img class="trending-arrow-for"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_next.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- -------------------------------------------------------------------------------------------- -->
+
+        <div class="shop-cat">
+
+            <div class="shop-head">
+                <div>
+                    <h2 class="part-offer">Shop by Category</h2>
+                </div>
+                <div class="view-all">View All ></div>
+            </div>
+
+            <div class="product-cat-container">
+
+                <div class="product-cat">
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" alt="">
+                    <p class="covid-info">Covid Essentials</p>
+                </div>
+
+                <div class="product-cat">
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/481/thumb/ayush_0.jpg" alt="">
+                    <p class="covid-info">Ayush</p>
+                </div>
+
+                <div class="product-cat">
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg"
+                        alt="">
+                    <p class="covid-info">Mom & Baby</p>
+                </div>
+
+                <div class="product-cat">
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/665/thumb/devices_1.jpg"
+                        alt="">
+                    <p class="covid-info">Devices</p>
+                </div>
+
+                <div class="product-cat">
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/500/thumb/fitness_0.jpg"
+                        alt="">
+                    <p class="covid-info">Fitness</p>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------ -->
+            <h2 class="part-offer">Top Brands</h2>
+            <div class="product-cat-container-two">
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/skin-elements.jpg?v=8" alt="">
+                    <p class="covid-info">Skin-Elements</p>
+                    <p class="product-discount">UP TO 50%</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=8" alt="">
+                    <p class="covid-info">Dr-Vidhyas</p>
+                    <p class="product-discount">UP TO 20% OFF</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=8" alt="">
+                    <p class="covid-info">Dabur</p>
+                    <p class="product-discount">UP TO 30%</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=8" alt="">
+                    <p class="covid-info">ACCU-CHEK</p>
+                    <p class="product-discount">UP TO 25% OFF</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/novaherbs.jpg?v=8" alt="">
+                    <p class="covid-info">Novaherbs</p>
+                    <p class="product-discount">UP TO 20% OFF</p>
+
+                </div>
+
+            </div>
+            <!-- ------------------------------------------------------------------------------------------- -->
+            <hr class="horizontala">
+
+            <div class="Netmeds">
+
+                <div class="star-Membership">
+                    <div class="star">
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/netmeds_first_membership.svg"
+                            alt="">
+                    </div>
+                    <div class="Membership">
+                        <h2 class="part-offer">Netmeds First Membership</h2>
+                        <ul>
+                            <li class="special-discounts">Get special discounts and offers on Netmeds services.</li>
+                            <li class="special-discounts">Get 2.5% NMS Cash on all orders.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="charging">
+                    <div class="Starting">
+                        <div class="charge-icon">
+                            <img src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/new-icons/flash.svg"
+                                alt="">
+                        </div>
+                        <div class="view">
+                            <p>Starting at ₹299</p>
+                        </div>
+                    </div>
+                    <button class="Explore-Plans">Explore Plans</button>
+                </div>
+
+            </div>
+
+            <hr>
+            <!-------------------------------------------------------------------------------------------- -->
+            <div class="shop-head">
+                <div>
+                    <h2 class="part-offer">Categories in Focus</h2>
+                </div>
+                <div class="view-all">View All ></div>
+            </div>
+            <div class="product-cat-container-focus">
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg" alt="">
+                    <p class="covid-info">Feminine Hygeine</p>
+                    <p class="product-discount">UP TO 50% OFF</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg"
+                        alt="">
+                    <p class="covid-info">Body Care</p>
+                    <p class="product-discount">UP TO 60% OFF</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg"
+                        alt="">
+                    <p class="covid-info">Ayurvedic</p>
+                    <p class="product-discount">UP TO 76% OFF</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack" src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg"
+                        alt="">
+                    <p class="covid-info">Orthopedics</p>
+                    <p class="product-discount">UP TO 83% OFF</p>
+
+                </div>
+
+                <div class="product-cat-two">
+
+                    <img class="covid-pack"
+                        src="https://www.netmeds.com/images/category/3216/thumb/sports_supplements_0.jpg" alt="">
+                    <p class="covid-info">Sports Supplements</p>
+                    <p class="product-discount">UP TO 60% OFF</p>
+
+                </div>
+
+            </div>
+            <!-- ----------------------------------------------------------------------------------------------- -->
+
+            <div class="facial-kits-main">
+                <div class="shop-head-beauty">
+                    <div>
+                        <h2 class="part-offer-beauty">Explore Beauty</h2>
+                    </div>
+                    <div class="view-all-beauty">View All ></div>
+                </div>
+                <div class="facial-kits-child-health">
+                    <div class="beauty-products">
+                        <img class="beauty-arrow-back-health"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_prev.svg"
+                            alt="">
+                        <p class="para-facial">Facial Kits</p>
+                    </div>
+                    <div class="beauty-products-same-div">
+                        <img class="care-lip"
+                            src="https://www.netmeds.com/images/category/v1/560/thumb/lip_care_200.jpg" alt="">
+                        <p class="para-facial-care">Lip Care</p>
+                    </div>
+                    <div class="beauty-products-same-div">
+                        <img class="care-lip"
+                            src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" alt="">
+                        <p class="para-facial-care">Body Care</p>
+                    </div>
+                    <div class="beauty-products-same-div">
+                        <img class="care-lip"
+                            src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_0_200.jpg" alt="">
+                        <p class="para-facial-care">Hair Care</p>
+                    </div>
+                    <div class="beauty-products">
+                        <img class="beauty-arrow-for"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_next.svg"
+                            alt="">
+                        <p class="para-facial-three">Facial Kits</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+            <div class="facial-kits-main-best">
+                <div class="shop-head-beauty">
+                    <div>
+                        <h2 class="part-offer-beauty">Best in Beauty</h2>
+                    </div>
+                    <div class="view-all-beauty">View All ></div>
+                </div>
+                <div class="facial-kits-child-health">
+                    <div class="beauty-products">
+                        <img class="beauty-arrow-back"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_prev.svg"
+                            alt="">
+                        <p class="para-facial-three">Maybelline</p>
+                    </div>
+                    <div class="beauty-products-same-div">
+                        <img class="care-lip"
+                            src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg" alt="">
+                        <p class="para-facial-care">Garnier</p>
+                    </div>
+                    <div class="beauty-products-same-div">
+                        <img class="care-lip"
+                            src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg" alt="">
+                        <p class="para-facial-care">Myglamm</p>
+                    </div>
+                    <div class="beauty-products-same-div">
+                        <img class="care-lip"
+                            src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg" alt="">
+                        <p class="para-facial-care">Colorbar</p>
+                    </div>
+                    <div class="beauty-products">
+                        <img class="beauty-arrow-for"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_next.svg"
+                            alt="">
+                        <p class="para-facial-three">Plum</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ----------------------------------------------------------------------------------------------------- -->
+
+            <div class="personal-care">
+
+                <div class="shop-head">
+                    <div>
+                        <h2 class="part-offer">Personal Care</h2>
+                    </div>
+                    <div class="view-all">View All ></div>
+                </div>
+
+                <div class="product-cat-container">
+
+                    <div class="product-cat">
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" alt="">
+                        <p class="covid-info">Body Care</p>
+                    </div>
+
+                    <div class="product-cat">
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg" alt="">
+                        <p class="covid-info">Mom & Baby</p>
+                    </div>
+
+                    <div class="product-cat">
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/653/thumb/skin_treatment.jpg" alt="">
+                        <p class="covid-info">Skin Treatment</p>
+                    </div>
+
+                    <div class="product-cat">
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/3495/thumb/face-wash-cleansers_1.jpg" alt="">
+                        <p class="covid-info">Face Wash & Cleaners</p>
+                    </div>
+
+                    <div class="product-cat">
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3566/thumb/shower_gels_body_wash.jpg"
+                            alt="">
+                        <p class="covid-info">Shower Gels & Body Wash</p>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------- -->
+
+                <div class="shop-head">
+                    <div>
+                        <h2 class="part-offer">Men's Grooming</h2>
+                    </div>
+                    <div class="view-all">View All ></div>
+                </div>
+                <div class="product-cat-container-focus">
+
+                    <div class="product-cat-two">
+
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3420/thumb/shaving_200.jpg?v=1" alt="">
+                        <p class="covid-info">Shaving</p>
+                        <p class="product-discount">UP TO 31% OFF</p>
+
+                    </div>
+
+                    <div class="product-cat-two">
+
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3002/thumb/razors_cartridges_0.jpg?v=1"
+                            alt="">
+                        <p class="covid-info">Rozars & Cartridges</p>
+                        <p class="product-discount">UP TO 46% OFF</p>
+
+                    </div>
+
+                    <div class="product-cat-two">
+
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3591/thumb/beard_oil_200.jpg?v=1" alt="">
+                        <p class="covid-info">Beard Oil</p>
+                        <p class="product-discount">UP TO 25% OFF</p>
+
+                    </div>
+
+                    <div class="product-cat-two">
+
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3593/thumb/beard_wash_0.jpg?v=1" alt="">
+                        <p class="covid-info">Beard Wash</p>
+                        <p class="product-discount">UP TO 20% OFF</p>
+
+                    </div>
+
+                    <div class="product-cat-two">
+
+                        <img class="covid-pack"
+                            src="https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_200.jpg?v=1"
+                            alt="">
+                        <p class="covid-info">Hair Gels & Waxes</p>
+                        <p class="product-discount">UP TO 23% OFF</p>
+
+                    </div>
+
+                </div>
+                <!-- ---------------------------------------------------------------------------------------- -->
+
+                <hr class="horizontala">
+
+                <div class="Netmeds">
+
+                    <div class="star-Membership">
+                        <div class="star">
+                            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/subscribe_and_schedule.svg"
+                                alt="">
+                        </div>
+                        <div class="Membership">
+                            <h2 class="part-offer">Get medicine refill every month</h2>
+                            <ul>
+                                <li class="special-discounts">Subscribe for 12 months and get the last month free.</li>
+                                <li class="special-discounts">Subscribe and schedule next deliveries.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="charging">
+                        <div class="Starting">
+                            <div class="charge-icon">
+                                <!-- <img src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/new-icons/flash.svg"
+                                alt=""> -->
+                            </div>
+                            <div class="view">
+                                <!-- <p>Starting at ₹299</p> -->
+                            </div>
+                        </div>
+                        <button class="Explore-Plans">Subscribe</button>
+                    </div>
+
+                </div>
+
+                <hr>
+                <!-- ---------------------------------------------------------------------------------------- -->
+
+                <div class="health-concern">
+
+                    <div class="shop-head">
+                        <div>
+                            <h2 class="part-offer">Health Concerns</h2>
+                        </div>
+                        <div class="view-all">View All ></div>
+                    </div>
+
+                    <div class="product-cat-container">
+
+                        <div class="product-cat">
+                            <img class="health-pack"
+                                src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/diabetic-care.jpg?v=1"
+                                alt="">
+                            <p class="health-info">Diabetic Care</p>
+                        </div>
+
+                        <div class="product-cat">
+                            <img class="health-pack"
+                                src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/de-addiction.jpg?v=1"
+                                alt="">
+                            <p class="health-info">De-Addiction</p>
+                        </div>
+
+                        <div class="product-cat">
+                            <img class="health-pack"
+                                src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1"
+                                alt="">
+                            <p class="health-info">Lung Care</p>
+                        </div>
+
+                        <div class="product-cat">
+                            <img class="health-pack"
+                                src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1"
+                                alt="">
+                            <p class="health-info">Weight Care</p>
+                        </div>
+
+                        <div class="product-cat">
+                            <img class="health-pack"
+                                src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1"
+                                alt="">
+                            <p class="health-info">Women's Care</p>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------------------------------------------------------- -->
+
+                    <div class="facial-kits-main-health">
+                        <div class="shop-head-beauty">
+                            <div>
+                                <h2 class="part-offer-beauty">Advice From Health Experts</h2>
+                            </div>
+                            <div class="view-all-beauty">View All ></div>
+                        </div>
+                        <div class="facial-kits-child-health">
+                            <div class="health-expert-product">
+                                <img class="beauty-arrow-back-health"
+                                    src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_prev.svg"
+                                    alt="">
+                                <p class="para-health-expert">Prunes/Dried/Plums/Plum Juice:Nutripional Content.. </p>
+                            </div>
+                            <div class="beauty-products-same-div-health-expert">
+                                <img class="advice-from-health-expert-img"
+                                    src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1611741966_Peepal_features_480.jpg"
+                                    alt="">
+                                <p class="same-para-facial-care">Peepal Tree: Medicine And Therapeutic Benefits,S..</p>
+                            </div>
+                            <div class="beauty-products-same-div-health-expert">
+                                <img class="advice-from-health-expert-img"
+                                    src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648637148_Natural-Remedies-480.jpg"
+                                    alt="">
+                                <p class="same-para-facial-care">Got Tanned? Here's Why It Can Harm Your Skin.5..</p>
+                            </div>
+                            <div class="health-expert-product">
+                                <img class="health-expert-for"
+                                    src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/white_next.svg"
+                                    alt="">
+                                <p class="para-health-expert">Sensory Processing Disorder: Causes,Symptoms And..</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ---------------------------------------------------------------------------- -->
+
+                    <div class="out">
+                        <div class="in">
+                            <span class="start">Popular Wellness Products: </span><span class="end">Dabur Shilajit Gold
+                                Capsule 20's | Dabur Chyawanprash Awaleha 500 gm | Pankajakasthuri Breathe Easy Granules
+                                400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla Flavour 400 gm (Tin) |
+                                Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan
+                                Excella Pro 1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips
+                                50's | D Protin Chocolate Powder 500 gm | Climax Spray for Men 12 gm</span><br>
+                            <span class="start">Top-Selling Health Packages: </span><span class="end">AAROGYAM C |
+                                Netmed Health Pack | Aarogyam 1.3 | Netmeds Swasthya | Diabetic Checkup | Aarogyam 1.7 |
+                                Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds Swasthya
+                                Plus</span><br>
+                            <span class="start">Top-Selling Lab Tests: </span><span class="end"> Complete Blood Count
+                                (CBC)/Complete Hemogram | LIVER FUNCTION TEST | Blood Glucose Fasting (FBS) | THYROID
+                                PROFILE -TOTAL(T3,T4&TSH) | Fever Profile | Urine Routine & Microscopy | Hemoglobin A1C
+                                (HbA1c) | 25-OH Vitamin D (TOTAL)/Vitamin D Total 25 Hydroxy | Uric Acid | Maternal
+                                screen-1st Trimester Dual Marker test</span><br>
+                            <span class="start">Top-Selling Radiology Tests: </span><span class="end"> Ultrasound Whole
+                                Abdomen | MRI Scan Brain | CT Scan Brain | ECHO | X Ray Chest PA View | PET Scan | ECG |
+                                Ultrasound Pelvis | 3T MRI Scan Brain | CT Scan Chest</span><br>
+                            <span class="start">Most Viewed Health Articles:</span><span class="end">Chandraprabha Vati
+                                - Uses, Functions And Therapeutic Benefits | Amla: Benefits, Uses For Hair and Health
+                                Conditions, Supplements And Recipes | Amazing Benefits Of Chyawanprash For Bolstering
+                                Immunity And Vitality | Arogyavardhini Vati - Uses, Functions And Therapeutic Benefits |
+                                Amazing Benefits Of Betel Leaves Nobody Told You</span><br>
+                            <h1>Welcome to Netmeds.com! India's Leading Online Pharmacy!</h1>
+                            <p>With a dynamic legacy of over 100 years in the pharma business, it comes as no surprise
+                                that Netmeds.com is the first choice of over 4 million+ satisfied customers when it
+                                comes to an online pharmacy in India. Netmeds.com has a pan India presence as we deliver
+                                health care essentials to every state in the country. We take your health seriously at
+                                Netmeds.com. Be it purchasing medicines online, lab tests or online doctor
+                                consultations, we've got it all covered for our customers!</p>
+                            <h1>Take the Worry Out of Buying Medicines! Purchase Medicines Online Anytime, Anywhere!
+                            </h1>
+                            <p>Get everything you need at Netmeds.com to take care of your health right from
+                                high-quality, affordable, authentic prescription medicines, Over-The-Counter
+                                pharmaceuticals products to general health care products, Ayurveda, Unani and Homeopathy
+                                medicines.</p>
+                            <p>Buy medicines online at Netmeds.com from the comfort of your home and we will take care
+                                of the rest! We will ensure that the life-saving drugs reach your doorstep without a
+                                hitch. Do away with the hassle of driving to the medical store, waiting in line, or even
+                                remembering your refills! Netmed.com will sort out those problems for you effectively so
+                                that you can lead a healthy and full life!</p>
+                            <p>Ordering medicines online at Netmeds.com is just a simple 4 step process. Browse through
+                                our wide range of health care products, add them to your cart, uploading your
+                                prescription (if required) and proceed to checkout!</p>
+                            <p>With Netmed.com, rest assured that your health will be in safe hands!</p>
+                            <h1>Buying medicines online</h1>
+                            <p>At Netmeds.com, we ensure that you get high-quality life-saving medicines are delivered
+                                to you on time. Order medicines online at your convenience from across the country. We
+                                also deliver Ayurvedic, Homeopathic, Unani and Over-The-Counter (OTC) products to over
+                                19,000 pin codes across the country!</p>
+                            <h1>Medicine Subscription</h1>
+                            <p>Remembering to refilling medicines month on month to address chronic conditions can be a
+                                hassle. Netmeds' subscription service will ensure that you never run out of these vital
+                                medicines. Just set it up and your medicines will get refilled and delivered
+                                automatically every month to your doorstep!</p>
+                            <h1>Netmeds First</h1>
+                            <p>Netmeds First is our loyalty programme which puts you and your health First! First
+                                members can get an extra 2.5% NMS Cashback (up to INR 100 per order) on prescription
+                                medication ordered using the membership. Members are also eligible for free delivery,
+                                priority processing, and free online doctor consultations!</p>
+                            <h1>Diagnostics</h1>
+                            <p>Do you find yourself constantly putting off getting your lab tests done because it's
+                                inconvenient to schedule them or because they are expensive? Visit Netmed.com to book
+                                lab tests and health checkup packages online from well-reputed, certified diagnostic
+                                labs according to your convenience and at affordable rates. We will also make your lab
+                                reports available online for easy access.</p>
+                            <h1>Online Doctor Consultation</h1>
+                            <p>Are the long queues at hospitals and clinics putting you off? At Netmeds.com, we realize
+                                that your time and health are precious. Consult with top-notch doctors online 24/7 at
+                                your convenience through our online doctor consultation service!</p>
+                            <h1>Why Choose Netmeds?</h1>
+                            <ul>
+                                <li class="list">100+ years of experience in the pharma sector </li>
+                                <li class="list">Vital medicines delivered across the countr </li>
+                                <li class="list"> Trust of more than 4 million+ loyal customers
+                                </li>
+                                <li class="list">Our team is made up of highly experienced pharmacists & healthcare
+                                    professionals</li>
+                                <li class="list">A wide array of healthcare services available for your convenience
+                                </li>
+                                <li class="list">We stock only genuine medicines & healthcare products</li>
+                            </ul>
+                            <h1>Our Awards and Recognition</h1>
+                            <p>We at Netmeds.com know how crucial medicine is to treating health conditions and we are
+                                extremely proud to be at the forefront of the online medicine industry. Netmeds.com
+                                offers its customers a reliable online pharmacy service and as a testament to our
+                                commitment, we are regularly recognized and honoured with awards. We are pleased to
+                                highlight some of our awards here and we aim to continue adding more feathers to our
+                                cap!
+                            </p>
+                            <p>We have bagged the 'Health Tech Start-Up of the Year' at the NDTV Unicorn Awards 2016. We
+                                are also proud that we have been selected as Asia's Most Promising Brand 2018' by Int+
+                                WCRC International.</p>
+                            <p>We have been named as the 'Best Digital Healthcare Start-up' by ET Now World Health and
+                                Wellness Congress in 2019. We were also recognized by ET Now World Health and Wellness
+                                Congress as the 'Digital Healthcare Company of the year' in 2019.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="foot">
+                        <div class="netmeds-desc">
+                            <div>
+                                <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg"
+                                    alt="">
+                            </div>
+                            <div class="netmeds-font">
+                                <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of
+                                    India’s most trusted pharmacies,
+                                    with over 100 years’ experience in dispensing quality medicines.</p>
+                            </div>
+                        </div>
+                        <hr style="width: 100%; ">
+                        <div style="display: flex;">
+                            <div class="about-company">
+                                <ul>
+                                    <li>
+                                        <p> COMPANY</p>
+                                    </li>
+                                    <li>
+                                        <p>About Netmeds</p>
+                                    </li>
+                                    <li>
+                                        <p>Customers Speak</p>
+                                    </li>
+                                    <li>
+                                        <p>In the News</p>
+                                    </li>
+                                    <li>
+                                        <p>Career</p>
+                                    </li>
+                                    <li>
+                                        <p>Terms and Conditions</p>
+                                    </li>
+                                    <li>
+                                        <p>Privacy Policy</p>
+                                    </li>
+                                    <li>
+                                        <p>Fees and Payments Policy</p>
+                                    </li>
+                                    <li>
+                                        <p>Shipping and Delivery Policy</p>
+                                    </li>
+                                    <li>
+                                        <p>Return, Refund and Cancellation Policy</p>
+                                    </li>
+                                    <li>
+                                        <p>Contact</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p>SHOPPING</p>
+                                    </li>
+                                    <li>
+                                        <p>Browse by A-Z</p>
+                                    </li>
+                                    <li>
+                                        <p>Browse by Manufacturers</p>
+                                    </li>
+                                    <li>
+                                        <p>Health Articles</p>
+                                    </li>
+                                    <li>
+                                        <p>Offers / Coupons</p>
+                                    </li>
+                                    <li>
+                                        <p>FAQs</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p> SOCIAL</p>
+                                    </li>
+                                    <li>
+                                        <p>Patients Alike</p>
+                                    </li>
+                                    <li>
+                                        <p>Facebook</p>
+                                    </li>
+                                    <li>
+                                        <p>Twitter</p>
+                                    </li>
+                                    <li>
+                                        <p>LinkedIn</p>
+                                    </li>
+                                    <li>
+                                        <p>Youtube</p>
+                                    </li>
+                            </div>
+                            <div class="subscribe-class">
+                                <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                                <p>Get a free subscription to our health and fitness tip and stay tuned to our latest
+                                    offers</p>
+                                <form action="">
+                                    <input id="email" type="text" placeholder="Enter your Email">
+                                    <button id="button" title="Go" type="submit">Go</button>
+                                </form>
+                                <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en"
+                                    target="blank">
+                                    <img class="play-store"
+                                        src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png"
+                                        alt="">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011"
+                                    target="blank">
+                                    <img class="play-store"
+                                        src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <hr style="width: 95%;">
+                        <div class="foot-bottom">
+                            <p>Medicine</p>
+                            <p>Wellness</p>
+                            <p>Lab Test</p>
+                            <p>Beauty</p>
+                            <p>Copyright© 2022. All Rights Reserved.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
+<!-- ---------------------------End-------------------------------------------- --End----------------------- -->
