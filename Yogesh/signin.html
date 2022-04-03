@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signin.css" />
+    <title>signin page</title>
+    <style>
+   
+    </style>
+  </head>
+  <body>
+    <!--signin.html file by yogendra-->
+    <div id="container">
+      <div class="box">
+        <img
+          id="img"
+          src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <h1>Create Account</h1>
+
+        <form id="VerifyMe">
+          <label>Email Id</label>
+          <br />
+          <div>
+            <input
+              type="text"
+              name=""
+              id="Email"
+              placeholder="Enter your Email Id"
+            />
+          </div>
+
+          <label>First Name</label>
+          <br />
+          <div>
+            <input
+              type="text"
+              name=""
+              id="First"
+              placeholder="Your First Name"
+            />
+          </div>
+
+          <label>Last Name</label>
+          <br />
+          <div>
+            <input id="Last" type="text" name="" placeholder="Your Last Name" />
+          </div><br>
+          <h3 id="VerifyNum">VERIFYING NUMBER </h3>
+          <p id="otpsent">We have sent 6 digit OTP on <span style="color: black;" >+91-9876543210</span> <span class="change">Change</span></p>
+          <div id="otpverify">
+            <div> <b>2</b> </div>
+            <div><b>4</b> </div>
+            <div><b>6</b></div>
+            <div><b>3</b></div>
+            <div><b>1</b></div>
+            <div><b>6</b></div> 
+          </div>
+          <p class="change_otp" >Resend OTP</p>
+         
+          <button id="btn" type="submit">VERIFY</button>
+        </form>
+        <div id="gf"></div>
+      </div>
+    </div>
+    <div id="nil" class="modelcontainer">
+     <div class="model-container1">
+       <h1>Sign In Successful  <span>&#x2705;</i></span></h1>
+       <p>You Have Successfully logged into The Netmed.com </p>
+       <button id="btn2" onclick="removeClass()">OK</button>
+     </div>
+    </div>
+    
+    <div id="terms">
+      <span id="aa">By continuing you agree to our </span
+      ><span id="bb">Terms of service </span><span id="cc"> and </span
+      ><span id="dd"> Privacy & Legal Policy.</span>
+    </div>
+    <script src="signin.js">
+</script>
+    
+  </body>
+</html>
