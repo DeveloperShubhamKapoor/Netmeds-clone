@@ -12,6 +12,128 @@
     
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        .container {
+            width: 100%;
+            height: 160px;
+            /* border: 1px solid rgb(247, 13, 52); */
+            justify-content: center;
+            text-align: center;
+            background-color: #32AEB1;
+            margin-top: -16.5px;
+        }
+        .child-div {
+            width: 95%;
+            height: 75px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 8px;
+            display: flex;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+        input {
+            height: 45px;
+            width: 78%;
+            /* border: 1px solid rgb(168, 13, 39); */
+            margin-left: 69px;
+            padding: 0px 64px 0px 12px;
+            box-sizing: border-box;
+            margin-top: 2px;
+            border: none;
+            background-color: transparent;
+            font-family: 'Lato', sans-serif;
+        }
+        .info {
+            display: flex;
+            width: 30%;
+            height: 55px;
+            /* border: 1px solid green; */
+            justify-content: space-around;
+            margin-top: 15px;
+            font-size: 16px;
+            margin-left: 12px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+        }
+        .under-child {
+            width: 80%;
+            height: 75px;
+            /* border: 1px solid rgb(103, 181, 233); */
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            font-size: 16px;
+            letter-spacing: normal;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+        }
+        .img-med {
+            height: 40px;
+        }
+        .unde-third-child {
+            display: flex;
+            height: 60px;
+            width: 15%;
+            /* border: 1px solid blueviolet; */
+            margin: auto;
+            font-family: 'Lato', sans-serif;
+        }
+        .para {
+            margin-left: 10px;
+            color: #FFFFFFCC;
+            font-family: 'Lato', sans-serif;
+        }
+        .search-bar {
+            width: 55%;
+            height: 50px;
+            /* border: 1px solid rgb(247, 13, 52); */
+            margin-left: 20px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            display: flex;
+            background-color: white;
+            border-radius: 8px;
+            font-family: 'Lato', sans-serif;
+        }
+        .del {
+            font-size: 14px;
+            margin-top: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+        }
+        .img-logo {
+            margin-left: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .below-nav {
+            width: 75%;
+            height: 40px;
+            /* border: 1px solid rgb(207, 5, 106); */
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Lato', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: #151b39;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+        }
+        .below-nav {
+            width: 75%;
+            height: 40px;
+            /* border: 1px solid rgb(207, 5, 106); */
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Lato', sans-serif;
+        }
     body{
         background-color: #f6f6f7;
         
@@ -737,11 +859,181 @@ rgba(21, 27, 57, 0.6);
 .home{
     margin-left: 2px;
 }
+#foot{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    margin-top: 80px;
+}
+.netmeds-desc{
+    display: flex;
+    padding: 40px 35px ;
+    justify-content: space-around;
+}
+.netmeds-font{
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 130px;
+    margin-right: 270px;
+    margin-top: -15px;
+    color: #8593b5;
+    font-weight: 500;
+}
+.about-company{
+    display: flex;
+    gap: 25px;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-family: 'Lato',sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+.about-company li:nth-child(1){
+    font-weight: 600;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.subscribe-class{
+    padding-top: 55px;
+    padding-left: 100px;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    width: 20%;
+    margin-left: 200px;
+}
+.subscribe-class p:nth-child(1){
+    font-weight: 600;
+}
+#email{
+    border: none;
+    border-bottom: 1px solid rgba(11,18,25,.2);
+    font-size: 16px;
+    font-family: 'Lato',sans-serif;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#button{
+    border: none;
+    font-size: 15px;
+    background-color: #84be52;
+    border-radius: 5px;
+}
+.play-store{
+    width: 130px;
+    margin-top: 20px;  
+    margin-right: 10px; 
+}
+.foot-bottom{
+    display: flex;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    justify-content: space-between;
+    color: #85889b;
+    padding: 0px 40px;
+    font-weight: 500;
+}
+.foot-bottom p:nth-child(1){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(2){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(3){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(4){
+    cursor: pointer;
+}
+.home{
+    text-decoration: none;
+    color: #24aeb1;
+    font-size: 13px;
+}
+#non{
+    font-size: 12px;
+}
+#aq{
+    color: #b3b5b9;
+}
 
 
 </style>
 </head>
 <body>
+    <div class="container">
+        <div class="child-div">
+            <div>
+                <img class="img-logo" src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"
+                    alt="">
+            </div>
+            <div class="search-bar">
+                <p class="del">Deliver to </p>
+                <input type="text" placeholder="Search for Medicine & Wellness products...">
+            </div>
+            <div class="info">
+                <div>
+                    <p> <a style="color: white;" href="">Upload</a></p>
+                </div>
+                <div>
+                    <p> <a style="color: white;" href="">Cart</a></p>
+                </div>
+                <div>
+                    <p> <a style="color: white;" href=""> Sign in / Sign up</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="child-div">
+            <div class="under-child">
+                <div class="unde-third-child">
+                    <a href=""><img class="img-med"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/medicine.svg"
+                            alt=""></a>
+                    <p><a class="para" href="">Medicine</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href=""><img class="img-med"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt=""></a>
+                    <p><a class="para" href="">Wellness</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href=""><img class="img-med"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt=""></a>
+                    <p><a class="para" href="">Lab Tests</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href=""> <img class="img-med"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg" alt=""></a>
+                    <p><a class="para" href="">Beauty</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href=""><img class="img-med"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/health-library.svg"
+                            alt=""></a>
+                    <p><a class="para" href="">Health Corner</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="below-nav">
+
+        <p><a href="">COVID Essentials</a></p>
+        <p><a href="">Diabetes</a></p>
+        <p><a href="">Eyewear</a></p>
+        <p><a href="">Ayush</a></p>
+        <p><a href="">Fitness</a></p>
+        <p><a href="">Mom & Baby</a></p>
+        <p><a href="">Devices</a></p>
+        <p><a href="">Surgicals</a></p>
+        <p><a href="">Sexual Wellness</a></p>
+        <p><a href="">Treatments</a></p>
+
+    </div>
     <div id="bigbox">
         <div class="knowprob"><img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1635266868_WhatsApp_Image_2021-10-26_at_21.56.07.jpg"/></div>
         <div class="detailsbox">
@@ -1102,6 +1394,71 @@ rgba(21, 27, 57, 0.6);
          <div class="finals">
              <p>Automation powered by <span>Breakout</span> </p>
          </div>
+         <div id="foot">
+            <div class="netmeds-desc">
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+                </div>
+                <div class="netmeds-font">
+                    <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies,
+                         with over 100 years’ experience in dispensing quality medicines.</p>
+                </div>
+            </div>
+            <hr style="width: 95%; ">
+            <div style="display: flex;">
+                <div class="about-company">
+                    <ul>
+                        <li><p> COMPANY</p></li>
+                        <li><p>About Netmeds</p></li>
+                        <li><p>Customers Speak</p></li>
+                        <li><p>In the News</p></li>
+                        <li><p>Career</p></li>
+                        <li><p>Terms and Conditions</p></li>
+                        <li><p>Privacy Policy</p></li>
+                        <li><p>Fees and Payments Policy</p></li>
+                        <li><p>Shipping and Delivery Policy</p></li>
+                        <li><p>Return, Refund and Cancellation Policy</p></li>
+                        <li><p>Contact</p></li>
+                    </ul>
+                    <ul>
+                        <li><p>SHOPPING</p></li>
+                        <li><p>Browse by A-Z</p></li>
+                        <li><p>Browse by Manufacturers</p></li>
+                        <li><p>Health Articles</p></li>
+                        <li><p>Offers / Coupons</p></li>
+                        <li><p>FAQs</p></li>
+                    </ul>
+                    <ul>
+                        <li><p> SOCIAL</p></li>
+                        <li><p>Patients Alike</p></li>
+                        <li><p>Facebook</p></li>
+                        <li><p>Twitter</p></li>
+                        <li><p>LinkedIn</p></li>
+                        <li><p>Youtube</p></li> 
+                </div>
+                <div class="subscribe-class">
+                    <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+                    <form action="">
+                        <input id="email"  type="text" placeholder="Enter your email address">
+                        <button id="button" title="Go" type="submit">Go</button>
+                    </form>
+                   <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en" target="blank"> 
+                       <img class="play-store"  src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                    </a>
+                   <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011" target="blank"> 
+                       <img class="play-store" src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                    </a>   
+                </div>   
+            </div>
+            <hr style="width: 95%;">
+            <div class="foot-bottom">
+                <p>Medicine</p>
+                <p>Wellness</p>
+                <p>Lab Test</p>
+                <p>Beauty</p>
+                <p>Copyright© 2022. All Rights Reserved.</p>
+            </div>
 
     </body>
 </html>
